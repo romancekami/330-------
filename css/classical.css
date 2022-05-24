@@ -1,0 +1,15 @@
+/* 顶部横导航 */
+.yidong {
+    left: 540px;
+}
+.genzong a:nth-of-type(1):hover ~ .yidong {
+    left: 300px;
+}
+
+.gekai {
+    margin: 0 auto 100px;
+}
+.gekai:before {
+    left: 11%;
+    content: "C-L-A-S-S-I-C-A-L";
+}
