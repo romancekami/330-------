@@ -1,0 +1,144 @@
+/* 顶部横导航 */
+.yidong {
+    left: 420px;
+}
+.genzong a:nth-of-type(1):hover ~ .yidong {
+    left: 300px;
+}
+
+.zong {
+    position: relative;
+    top: 100px;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    /* 可以给背景盒子一个高度,目前是通过子盒子来撑开 */
+    /* height: 3500px; */
+    box-sizing: border-box;
+    margin: 0 auto 145px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* background-color: rgb(230, 209, 235); */
+}
+
+.you img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.you:hover {
+    transform: translateY(-1px);
+    box-shadow: 5px 5px 15px 5px #82a8e2;
+}
+
+/* wai最为父盒子包裹住左中右三个盒子 */
+.wai {
+    width: 100%;
+    height: 350px;
+    /* background-color: skyblue; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.zuo {
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    /* background-color: #ccc; */
+    box-shadow: 3px 3px 15px 0 #82a8e2;
+    /* transition: 0.3s ease; */
+}
+.zuo:hover {
+    opacity: 1!important;
+}
+.zuo > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #5192e7;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.zuo > p {
+    margin-top: 10px;
+    font-size: larger;
+    color: #54a3f1;
+    line-height: 1.6;
+    margin-left: 5%;
+    /* padding-right: 30px; */
+    width: 90%;
+}
+
+.zhong {
+    width: 14%;
+    height: 80%;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+}
+
+.zhong p {
+    background-color: pink;
+    width: 90%;
+    height: 60px;
+    background-color: #50b0f0;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 200%;
+    font-weight: 700;
+    /* 上下分配相同的距离,应该是借助上面zhong的flex来实现*/
+    margin: auto;
+    /* 这个1,2,3..矩形框要在中线上面显示 */
+    z-index: 1;
+}
+
+.you {
+    width: 40%;
+    height: 80%;
+    background-color: rgb(195, 224, 100);
+    border-radius: 10px;
+    /* 居中图片 */
+    text-align: center;
+    /* 万一有溢出的部分图片则隐藏 */
+    overflow: hidden;
+    box-shadow: 3px 3px 15px 0 #82a8e2;
+}
+/* .you:hover + .zuo {
+    visibility: visible;
+    background-color: #82a8e2!important;
+} */
+
+/* flex子项的默认order属性值是0 */
+/* 1,3...奇数行中的图片通过order: -1;在主轴上排序到第1个来显示 */
+
+.wai:nth-child(odd) .you {
+    order: -1;
+}
+
+.wai:nth-child(odd) .zhong {
+    order: 0;
+}
+
+.wai:nth-child(odd) .zuo {
+    order: 1;
+}
+
+/* 中线 */
+.xian {
+    position: absolute;
+    width: 5px;
+    background-color: #5dafe6;
+    z-index: 0;
+    height: 2440px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 180px;
+    border-radius: 2px;
+}

@@ -1,0 +1,387 @@
+/* 顶部横导航 */
+.yidong {
+    left: 900px;
+}
+.genzong a:nth-of-type(1):hover ~ .yidong {
+    left: 300px;
+}
+
+.gekai {
+    margin: 0 auto 100px;
+}
+.gekai:before {
+    content: "Q-U-E-N-T-I-O-N-S";
+}
+
+/* 趣味小问 */
+.ouguansj {
+    position: relative;
+    height: auto;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.ouguansj > h1 {
+    /* color: #1e88e5; */
+    font-size: 2.6rem;
+    color: #417ec4;
+    margin: 20px 0 10px 30px;
+}
+.ouguansj > h4 {
+    color: #2a89e7;
+    margin: 0 0 10px 30px;
+}
+
+/* 问题1 */
+.waikuang1 {
+    width: 90%;
+    position: relative;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    margin: 30px auto;
+    height: auto;
+    letter-spacing: 1px;
+    padding: 0 0 20px 0;
+    box-shadow: 5px 5px 15px #82a8e2;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+
+}
+.waikuang1::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 23%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #5ca0e4;
+}
+/* 从第2个p开始，n初始为0，所以是n+2 */
+.waikuang1 p:nth-of-type(n + 2) {
+    margin: 16px 50px;
+}
+.waikuang1 > .wenti1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4282e0;
+    margin: 40px 10px 10px 30px;
+}
+.waikuang1 label,
+.waikuang1 input {
+    font-size: 1.7rem;
+    color: #498adf;
+    cursor: pointer;
+}
+.waikuang1 > .tishi {
+    position: relative;
+    margin: 30px 0 20px 30px;
+    width: 64%;
+    height: 60px;
+    border-radius: 0 10px 10px 0;
+    font-size: 1.7rem;
+    line-height: 60px;
+    text-indent: 2rem;
+    box-shadow: 2px 2px 5px 0px#82a8e2;
+    /* display: none; */
+}
+.tishi::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 7px;
+    height: 60px;
+    background-color: #5899e4e7;
+}
+
+/* 问题2 */
+.waikuang2 {
+    width: 90%;
+    position: relative;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    margin: 40px auto;
+    /* bottom: 20px; */
+    height: auto;
+    letter-spacing: 1px;
+    padding: 0 0 20px 0;
+    box-shadow: 5px 5px 15px #82a8e2;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+
+}
+.waikuang2::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 23%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #5ca0e4;
+}
+/* 从第2个p开始，n初始为0，所以是n+2 */
+.waikuang2 p:nth-of-type(n + 2) {
+    margin: 16px 50px;
+}
+.waikuang2 > .wenti2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4282e0;
+    margin: 40px 10px 10px 30px;
+}
+.waikuang2 label,
+.waikuang2 input {
+    font-size: 1.7rem;
+    color: #498adf;
+    cursor: pointer;
+}
+.waikuang2 > .tishi1 {
+    position: relative;
+    margin: 30px 0 20px 30px;
+    width: 64%;
+    height: 60px;
+    border-radius: 0 10px 10px 0;
+    font-size: 1.7rem;
+    line-height: 60px;
+    text-indent: 2rem;
+    box-shadow: 2px 2px 5px 0px#82a8e2;
+    /* display: none; */
+}
+.tishi1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 7px;
+    height: 60px;
+    background-color: #5899e4e7;
+}
+/* 绿色 */
+.a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 7px;
+    height: 60px;
+    background-color: green;
+}
+/* 棕色 */
+.b::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 7px;
+    height: 60px;
+    background-color: brown;
+}
+
+/* 评论 */
+.pinlun {
+    position: relative;
+    height: 600px;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin: 40px auto;
+    background-color: rgb(251, 252, 253);
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.pinlun::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #60a3f0f5;
+    border-radius: 10px;
+    /* backdrop-filter: blur(1px); */
+}
+.pinlun > h1 {
+    position: relative;
+    font-size: 2.6rem;
+    color: #f1f8ff;
+    /* color: #417ec4; */
+    margin: 20px 0 10px 30px;
+}
+.pinlun > h4 {
+    position: relative;
+    color: rgb(242, 247, 251);
+    /* color: #2a89e7; */
+    margin: 0 0 10px 30px;
+}
+.rao {
+    position: relative;
+    /* background-color: pink; */
+    width: 34%;
+    height: 64%;
+    top: 5%;
+    left: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+.rao1 {
+    /* background-color: chocolate; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    /* 设置不规则边框 */
+    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
+    transition: 0.7s;
+    animation: raodong 10s infinite linear;
+}
+.rao1::after,
+.rao1::before {
+    /* background-color: olivedrab; */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px #fff solid;
+    transition: 0.7s;
+    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
+    animation: raodong 8s infinite linear;
+}
+/* 覆盖上面before的动画 现在一共是3个圈在一起转 */
+.rao1::before {
+    animation: raodong 6s infinite linear;
+}
+@keyframes raodong {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rao1 {
+    /* 这边想要更炫酷的话可以弄3个不同的颜色 */
+    /* background-color: rgb(231, 231, 231); */
+    background-color: rgb(211, 227, 248);
+    opacity: 0.8;
+}
+.rao1::before,
+.rao1::after {
+    background-color: rgb(251, 251, 250);
+    opacity: 0.8;
+}
+.rao2 {
+    /* background-color: #6c6d3b; */
+    position: relative;
+    padding: 33% 11%;
+    text-align: center;
+    z-index: 3;
+}
+.rao2 h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #4b8ad3;
+    transition: 0.3s;
+}
+.rao2 span {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-top: 16px;
+    padding: 14px 18px;
+    border-radius: 38% 62% 60% 37%/ 41% 44% 50% 59%;
+    background-color: #b2c6eb;
+    font-size: xx-large;
+    transition: 0.5s;
+    letter-spacing: 0;
+    color: #4b8ad3;
+}
+.rao2:hover h2 {
+    color: #728bbb;
+}
+.rao2:hover span {
+    border: 0;
+    color: #c1d4f8;
+    background-color: #728bbb;
+}
+
+/* 右半边 */
+.youban {
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    width: 44%;
+    height: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    background-color: #70acf1;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.youban > #plk {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    height: 320px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #2a89e7;
+    padding: 20px 10px 10px 40px;
+    box-sizing: border-box;
+}
+.youban > #plk > li {
+    margin: 5px;
+}
+.youban > #shuru {
+    position: absolute;
+    height: 125px;
+    width: 60%;
+    left: 5%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #2a89e7;
+    font-family: "微软雅黑";
+    /* white-space: wrap; */
+    word-wrap: wrap;
+    bottom: 20px;
+    border: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+}
+.youban > #shuru:focus {
+    outline: 5px double rgb(179, 220, 246);
+    border: 0;
+}
+.youban > #send {
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
+    width: 27.5%;
+    height: 125px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px #82a8e2;
+    text-align: center;
+    box-sizing: border-box;
+    /* line-height: 125px; */
+    font-size: 2rem;
+    padding-top: 15px;
+    cursor: pointer;
+    /* user-select: none; */
+    /* -webkit-tap-highlight-color: transparent; */
+}
+#send:hover {
+    transform: translateY(-1px);
+}
+.icon:hover {
+    color: #5ca1f0f3;
+}

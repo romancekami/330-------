@@ -1,0 +1,557 @@
+body {
+    /* height: 4500px; */
+    background-color: #f5f5f5;
+}
+
+/* 返回顶部图标 */
+.backtop {
+    z-index: 5;
+    position: fixed;
+    width: 80px;
+    right: 20px;
+    top: 84vh;
+    border-radius: 26%;
+    background-color: #cddaf8b9;
+    display: none;
+}
+.backtop:hover {
+    box-shadow: 1px 1px 10px 0px rgb(100, 181, 228);
+    background-color: #d7e6ecb9;
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+/* 大背景图 */
+.datu {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/index/欧冠大图1.jpg) no-repeat;
+    /* background-origin: content-box; */
+    background-size: cover;
+    background-position: 50% 60%;
+}
+.datu::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+/* 单击下滑按钮 */
+#anniu {
+    width: 100px;
+    height: 50px;
+    /* background-color: aliceblue; */
+    color: #c7c7c7;
+    text-align: center;
+    line-height: 100px;
+    font-size: 4rem;
+    font-weight: 800;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 85vh;
+    margin: auto;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* 了解欧冠 */
+.ouguanls {
+    position: relative;
+    width: 84%;
+    height: 600px;
+    margin: 50px auto;
+    /* border: 1px solid #6a9ef1; */
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px #82a8e2;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.ouguanls > h1 {
+    position: relative;
+    /* color: #1e88e5; */
+    font-size: 2.6rem;
+    color: #417ec4;
+    margin: 20px 0 10px 25px;
+}
+.ouguanls > h4 {
+    color: #2a89e7;
+    margin: 0 0 10px 26px;
+}
+.ouguanls > #youqiu {
+    float: right;
+    width: 41%;
+    position: absolute;
+    right: 30px;
+    bottom: 80px;
+}
+.ouguanls h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    border-left: 5px solid #5192e7;
+    color: #5192e7;
+    padding-left: 10px;
+}
+.ouguanls > .liaojie {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 48%;
+    font-size: larger;
+    letter-spacing: 2px;
+    /* font-weight: 600; */
+    /* color: #5192e7; */
+    color: #54a3f1;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* 欧冠规则 */
+.ouguanls > #zuobei {
+    float: left;
+    width: 41%;
+    border-radius: 10px;
+    margin: 5px 50px 0 27px;
+    height: 455px;
+    transition: 0.3s;
+}
+.ouguanls > #zuobei:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 20px 0 #71a2eb;
+}
+.ouguanls > .youls {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #70acf0;
+    /* background-color: #b4d7fe; */
+    width: 54%;
+    height: 600px;
+}
+.ouguanls > .youls > .xuanba {
+    position: absolute;
+    border-left: 5px solid #fff;
+    padding-left: 10px;
+    display: inline-block;
+    /* color: #5192e7; */
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    top: 16%;
+    right: 85%;
+}
+.ouguanls > .youls > .guize {
+    position: absolute;
+    right: 5.5%;
+    width: 90%;
+    font-size: larger;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 1.5;
+    text-align: left;
+    top: 24%;
+}
+.ouguanls > .youls > .saizhi {
+    position: absolute;
+    border-left: 5px solid #fff;
+    padding-left: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    top: 48%;
+    right: 85%;
+}
+.saizhi1 {
+    position: absolute;
+    right: 5.5%;
+    top: 56%;
+    width: 90%;
+    font-size: larger;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* 热门比赛 */
+.rmwai {
+    position: absolute;
+    width: 88%;
+    height: 800px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin-top: 15px;
+    margin-left: 6%;
+}
+.rmwai > .rmshang {
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 5px 5px 15px #82a8e2;
+}
+.rmshang > img {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 2%;
+    float: right;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.rmshang > img:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 20px 0 #80acee;
+}
+.rmshang > .hm1 {
+    /* float: left; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #5192e7;
+    margin-top: 3%;
+    margin-left: 30px;
+}
+.rmshang > .hm2 {
+    /* float: left; */
+    margin-top: 10px;
+    font-size: larger;
+    color: #54a3f1;
+    line-height: 1.6;
+    margin-left: 30px;
+    padding-right: 30px;
+    width: 42%;
+}
+
+.rmwai > .rmzuo {
+    position: absolute;
+    background-color: #62a3ee;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 440px;
+    border-radius: 0 0 0 10px;
+    box-shadow: 5px 5px 15px #82a8e2;
+}
+.rmzuo > .bili {
+    width: 90%;
+    height: 310px;
+    border-radius: 10px;
+    margin-left: 6%;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    transition: 0.3s;
+}
+.rmzuo > .bili:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 20px 0 rgb(174, 219, 240);
+}
+.rmzuo > .bili1 {
+    font-size: large;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 6%;
+}
+.rmzuo > .bili2 {
+    font-size: 1.1rem;
+    color: #fff;
+    width: 90%;
+    margin: 2% 6%;
+}
+.rmwai > .rmyou {
+    position: absolute;
+    background-color: #62a3ee;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 440px;
+    border-radius: 0 0 10px 0;
+    box-shadow: 5px 5px 15px #82a8e2;
+}
+.rmyou > .bfk {
+    width: 91%;
+    height: 310px;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-left: 4%;
+    margin-top: 4%;
+    transition: 0.3s;
+}
+.rmyou > .bfk:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 20px 0 rgb(174, 219, 240);
+}
+.rmyou > .bfk1 {
+    font-size: large;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 4%;
+}
+.rmyou > .bfk2 {
+    font-size: 1.1rem;
+    color: #fff;
+    width: 90%;
+    margin: 2% 4%;
+}
+
+/* 欧冠数据 */
+.waike {
+    height: 690px !important;
+}
+.ouguansj {
+    position: relative;
+    height: 640px;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.ouguansj > h1 {
+    /* color: #1e88e5; */
+    font-size: 2.6rem;
+    color: #417ec4;
+    margin: 20px 0 10px 25px;
+}
+.ouguansj > h4 {
+    color: #2a89e7;
+    margin: 0 0 10px 26px;
+}
+/* 射手榜 */
+.sheshou1 {
+    position: absolute;
+    width: 40%;
+    height: 510px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 0px#82a8e2;
+    left: 50px;
+    top: 140px;
+}
+#dangsaiji {
+    position: absolute;
+    display: inline-block;
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+    /* border: 2px solid #6298ef; */
+    line-height: 50px;
+    text-align: center;
+    font-size: large;
+    color: #ffffff;
+    background-color: #568bf6;
+    /* left: 70px; */
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    box-shadow: 0 5px 15px #82a8e2;
+    cursor: pointer;
+}
+#dangsaiji:hover {
+    background-color: #6499f2;
+    border: 1px solid #628aef;
+}
+/* #dangsaiji:hover {
+    background-color: #6499f2;
+} */
+/* #lishi:checked ~ #dangsaiji {
+    background-color: #c4d6f8;
+    color: #3973e7;
+} */
+/* #lishi {
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 0 10px 10px 0; */
+/* border: 2px solid #6298ef; */
+/* line-height: 50px;
+    text-align: center;
+    font-size: large;
+    color: #3973e7; */
+/* box-shadow: 5px 5px 10px 0px #82a8e2; */
+/* background-color: rgb(196, 214, 248); */
+/* left: 220px; */
+/* left: 49%;
+    top: -30px;
+    cursor: pointer;
+} */
+#dsshe {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: center;
+    color: #2a89e7;
+}
+#dsshe th {
+    font-size: larger;
+}
+#dsshe td {
+    height: 55px;
+    border: 0;
+    font-size: large;
+}
+
+/* 球队榜 */
+.qiudui {
+    position: absolute;
+    left: 51%;
+    top: 140px;
+    width: 44%;
+    height: 510px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 0px#82a8e2;
+}
+.qiudui1 {
+    position: absolute;
+    width: 100%;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #568bf6;
+    color: white;
+    font-size: larger;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -59%);
+    box-shadow: 0 5px 15px #82a8e2;
+}
+.qiudui1:hover {
+    background-color: #6499f2;
+    border: 1px solid #628aef;
+}
+.qiudiuph {
+    position: absolute;
+    border-collapse: collapse;
+    width: 90%;
+    top: 9%;
+    left: 5%;
+    text-align: center;
+    /* height: 450px; */
+}
+.qiudiuph th {
+    color: #2a89e7;
+    font-size: larger;
+}
+.qiudiuph td {
+    height: 55px;
+    color: #2a89e7;
+    font-size: large;
+}
+
+/* 鸣谢赞助商 */
+.zanzhu {
+    position: relative;
+    height: 400px;
+    width: 84%;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px#82a8e2;
+    overflow: hidden;
+}
+.zanzhu::before {
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px 0 0 10px;
+    left: 0;
+    background-color: #4394e6;
+    clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
+}
+.zanzhu::after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0 10px 10px 0;
+    right: 0;
+    background-color: #4394e6;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+.zanzhu1 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    background-color: #ffdd32;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px aliceblue;
+}
+.zanzhu2 {
+    position: absolute;
+    height: 160px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    top: 34%;
+    left: 21%;
+    border-radius: 0 0 5px 5px;
+    padding: 10px 15px 0 15px;
+    border-top: 5px solid #2a89e7;
+    background-color: #e7f0fbcc;
+    color: #3a6df0;
+    line-height: 3.5;
+    transition: 0.3s;
+}
+.gxw {
+    position: absolute;
+    width: 190px;
+    height: 32px;
+    margin: 30% 0 0 60%;
+    background-color: #fff;
+    padding: 5px;
+    outline: 1px solid #568bf6;
+    text-align: center;
+    border-radius: 3px;
+    animation: henyi linear 10s infinite;
+}
+.gxw:hover ~ .zanzhu2 {
+    transform: translateY(-8px);
+}
+.gxw:hover {
+    animation-play-state: paused;
+}
+.ganxie {
+    position: absolute;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #568bf6;
+    font-size: larger;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.ganxie:hover {
+    background-color: #2d76f3;
+}
+@keyframes henyi {
+    0% {
+        margin: 30% 0 0 60%;
+    }
+    50% {
+        margin: 30% 0 0 21%;
+    }
+    100% {
+        margin: 30% 0 0 60%
+    }
+}

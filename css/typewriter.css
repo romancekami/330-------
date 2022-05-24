@@ -1,0 +1,37 @@
+/* 打字机效果 */
+.gekai {
+    position: relative;
+    top: 60px;
+    background-color: #6c98d1a6;
+    width: 84%;
+    margin: auto;
+    height: 120px;
+    box-shadow: 5px 5px 15px 0 #bbd7ff;
+    border-radius: 0 0 10px 10px;
+}
+.gekai:before {
+    content: "C-H-A-M-P-I-O-N-S";
+    /* content: "C—H—A—M—P—I—O—N—S"; */
+    /* background-color: pink; */
+    position: absolute;
+    width: 90%;
+    left: 7%;
+    height: 100%;
+    line-height: 120px;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: normal;
+    letter-spacing: 0.5rem;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.2s steps(30) infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 95%;
+    }
+}
