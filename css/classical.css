@@ -6,10 +6,126 @@
     left: 300px;
 }
 
+/* 打字机 */
 .gekai {
-    margin: 0 auto 100px;
+    margin: 0 auto 96px;
 }
 .gekai:before {
     left: 11%;
     content: "C-L-A-S-S-I-C-A-L";
+}
+
+/* 经典比赛 */
+/* 比赛1 */
+.bisai1 {
+    position: relative;
+    height: 600px;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* transition: all 0.5s ease-in-out; */
+}
+.bisai1 > h1 {
+    /* color: #1e88e5; */
+    font-size: 2.6rem;
+    color: #417ec4;
+    margin: 20px 0 10px 30px;
+}
+.bisai1 > h4 {
+    color: #2a89e7;
+    margin: 0 0 10px 30px;
+}
+/* 右半边 */
+.bisai1 > .you1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 600px;
+    background-color: #70acf0;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* 左半边 */
+.bisai1 > .zuo1 {
+    position: absolute;
+    left: 30px;
+    margin-top: 50px;
+    width: 420px;
+    height: 340px;
+    /* padding: 20px; */
+    /* box-shadow: 5px 5px 15px #82a8e2; */
+}
+.bisai1 > .zuo1 > h2 {
+    color: #5192e7;
+    margin: 0 0 10px 0px;
+}
+.bisai1 > .zuo1 > p {
+    color: #54a3f1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+/* 了解更多 */
+.genduo {
+    position: absolute;
+    right: 6%;
+    transform: translateY(-32px);
+    width: 66px;
+    height: 13px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 13px;
+    font-size: 15px;
+    color: #1b83eb;
+    background-color: #fff;
+    border: 2px solid rgb(103, 165, 246);
+    cursor: pointer;
+}
+.genduo:hover {
+    color: #fff;
+    transform: translateY(-33px);
+    background-color: rgb(103, 165, 246);
+}
+
+/* 第2场 */
+.bisaity {
+    position: relative;
+    width: 84%;
+    height: 640px;
+    box-shadow: 5px 5px 15px #82a8e2;
+    border-radius: 10px;
+    margin: 46px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.bisaibj {
+    /* background-color: rgb(233, 233, 233); */
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 100%;
+    background-color: #70acf0;
+    /* clip-path: polygon(0 0, 100% 0,70% 100% , 0 100%); */
+}
+.bisaity1 {
+    width: 80%;
+    position: absolute;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
 }
