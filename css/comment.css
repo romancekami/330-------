@@ -62,7 +62,7 @@
     height: 100%;
     border-radius: 0 10px 10px 0;
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #5ca0e4;
+    background-color: #59a0f1;
 }
 /* 从第2个p开始，n初始为0，所以是n+2 */
 .waikuang1 p:nth-of-type(n + 2) {
@@ -127,7 +127,7 @@
     height: 100%;
     border-radius: 0 10px 10px 0;
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #5ca0e4;
+    background-color: #59a0f1;
 }
 /* 从第2个p开始，n初始为0，所以是n+2 */
 .waikuang2 p:nth-of-type(n + 2) {
