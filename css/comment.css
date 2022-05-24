@@ -317,7 +317,7 @@
     height: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
     background-color: #70acf1;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
@@ -383,5 +383,5 @@
     transform: translateY(-1px);
 }
 .icon:hover {
-    color: #5ca1f0f3;
+    color: #5ca1f0;
 }
