@@ -14,6 +14,8 @@ header {
     border-radius: 0 0 5px 5px;
     z-index: 4;
     /* flex-shrink: 1; */
+    /* color: rgb(234, 247, 255) */
+    /* background-color: rgb(123, 161, 197);  */
 }
 header > a {
     width: 120px;
