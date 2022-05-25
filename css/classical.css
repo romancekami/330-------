@@ -110,16 +110,97 @@
     overflow: hidden;
     background-color: #f3f3f3;
 }
-.bisaibj {
+.bisaibj2 {
     /* background-color: rgb(233, 233, 233); */
     position: absolute;
-    width: 50%;
+    width: 58%;
     left: 0;
     height: 100%;
     background-color: #70acf0;
-    /* clip-path: polygon(0 0, 100% 0,70% 100% , 0 100%); */
+    clip-path: polygon(0 0, 70% 0,100% 100% , 0 100%);
 }
-.bisaity1 {
+.bisaity2 {
+    width: 80%;
+    position: absolute;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    backdrop-filter: blur(3px);
+    box-shadow: 5px 5px 15px 0 rgba(251, 245, 245, 0.6);
+    color: #fff;
+}
+
+/* 第3场 */
+.bisaibj3 {
+    /* background-color: rgb(233, 233, 233); */
+    position: absolute;
+    width: 60%;
+    right: 0;
+    height: 100%;
+    background-color: #70acf0;
+    clip-path: polygon(30% 0, 100% 0,100% 100% , 0 100%);
+}
+.bisaity3 {
+    width: 80%;
+    position: absolute;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    backdrop-filter: blur(3px);
+    box-shadow: 5px 5px 15px 0 rgba(251, 245, 245, 0.6);
+    color: #fff;
+}
+
+/* 第4场 */
+.bisaibj4 {
+    /* background-color: rgb(233, 233, 233); */
+    position: absolute;
+    width: 58%;
+    left: 0;
+    height: 100%;
+    background-color: #70acf0;
+    clip-path: polygon(0 0, 70% 0,100% 100% , 0 100%);
+}
+.bisaity4 {
+    width: 80%;
+    position: absolute;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    backdrop-filter: blur(3px);
+    box-shadow: 5px 5px 15px 0 rgba(251, 245, 245, 0.6);
+    color: #fff;
+}
+
+/* 第5场 */
+.bisaibj5 {
+    /* background-color: rgb(233, 233, 233); */
+    position: absolute;
+    width: 58%;
+    right: 0;
+    height: 100%;
+    background-color: #70acf0;
+    clip-path: polygon(30% 0, 100% 0,100% 100% , 0 100%);
+}
+.bisaity5 {
     width: 80%;
     position: absolute;
     height: 70%;
