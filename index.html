@@ -1,310 +1,347 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>欧冠首页</title>
-    <link rel="stylesheet" href="css//header.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <!-- 引入Font class字体图标 -->
-    <link
-        rel="stylesheet"
-        href="https://at.alicdn.com/t/font_3061954_1l9ckfirzjc.css"
-    />
-    <link rel="stylesheet" href="css/backtop.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <script src="js/backtop.js"></script>
-</head>
-
-<body>
-    <!-- 横导航栏 -->
-    <header class="genzong">
-        <img src="images/欧冠图/欧冠透明.png" alt="" />
-        <a href="#" target="_blank">
-            <div>欧冠首页</div>
-        </a>
-        <a href="html/champions.html">
-            <div>历代冠军</div>
-        </a>
-        <a href="html/classical.html">
-            <div>经典比赛</div>
-        </a>
-        <a href="#">
-            <div>欧冠巨星</div>
-        </a>
-        <a href="#">
-            <div>豪门球队</div>
-        </a>
-        <a href="html/comment.html">
-            <div>问答评论</div>
-        </a>
-        <div class="yidong"></div>
-    </header>
-
-    <!-- 返回顶部图标 -->
-    <img
-        src="images/奖杯图标1.png"
-        class="backtop"
-        alt="返回顶部图标"
-        title="返回顶部"
-    />
-
-    <!-- 欧冠背景图 -->
-    <div class="datu">
-        <!-- 向下按钮 -->
-        <i class="iconfont icon-xiangxia" id="anniu"></i>
-    </div>
-    <!-- 向下按钮js -->
-    <script>
-        var xiangxia = document.getElementById("anniu");
-        xiangxia.addEventListener("click", function () {
-            //获取页面可视区高度
-            var clientHeight = document.documentElement.clientHeight;
-            window.scrollTo(0, clientHeight);
-        });
-    </script>
-
-    <!-- 了解欧冠 -->
-    <div class="ouguanls">
-        <h1>了解欧冠</h1>
-        <h4>欧冠的来龙去脉</h4>
-        <img
-            src="images/欧冠图/白色欧冠a.jpg"
-            alt="欧冠图"
-            title="欧冠"
-            id="youqiu"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>欧冠首页</title>
+        <link rel="stylesheet" href="css//header.css" />
+        <link rel="stylesheet" href="css/general.css" />
+        <!-- 引入Font class字体图标 -->
+        <link
+            rel="stylesheet"
+            href="https://at.alicdn.com/t/font_3061954_1l9ckfirzjc.css"
         />
-        <h2>诞生</h2>
-        <p class="liaojie">
-            二战结束后，足球运动在世界范围内全面复兴，法国人加布里埃尔·亚诺提出了创立欧洲俱乐部杯赛的构想。第一届欧冠于1955年举办，最终由皇家马德里队夺冠，于1992年比赛正式更名为“欧洲冠军联赛”，欧冠距今已有67年的历史。
-        </p>
-        <h2>介绍</h2>
-        <p class="liaojie">
-            欧洲冠军联赛（UEFA Champions
-            League，简称“欧冠联赛”或“欧冠”）是欧洲足球协会联盟主办的年度足球比赛，代表欧洲俱乐部足球最高水平和荣誉。先后有22支俱乐部获得过欧冠冠军，夺冠次数最多的球队是“皇家马德里”共13次。
-        </p>
-    </div>
+        <link rel="stylesheet" href="css/backtop.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <script src="js/backtop.js"></script>
+    </head>
 
-    <!-- 欧冠规则 -->
-    <div class="ouguanls">
-        <h1>欧冠规则</h1>
-        <h4>欧冠的比赛规则</h4>
-        <img src="images/index/欧冠奖杯图1.jpeg" alt="" id="zuobei" />
-        <div class="youls">
-            <div class="xuanba">选拔</div>
-            <p class="guize">
-                分组赛阶段有32个名额，其中16个直接分配给卫冕球队和15支来自欧洲最高排名的联赛冠军及亚军。剩下的就要打附加赛来确定才加参赛名额，参加附加赛的球队都是欧洲各国联赛的冠军。
+    <body>
+        <!-- 横导航栏 -->
+        <header class="genzong">
+            <img src="images/欧冠图/欧冠透明.png" alt="" />
+            <a href="#" target="_blank">
+                <div>欧冠首页</div>
+            </a>
+            <a href="html/champions.html">
+                <div>历代冠军</div>
+            </a>
+            <a href="html/classical.html">
+                <div>经典比赛</div>
+            </a>
+            <a href="#">
+                <div>欧冠巨星</div>
+            </a>
+            <a href="html/halloffame.html">
+                <div>豪门球队</div>
+            </a>
+            <a href="html/comment.html">
+                <div>问答评论</div>
+            </a>
+            <div class="yidong"></div>
+        </header>
+
+        <!-- 返回顶部图标 -->
+        <img
+            src="images/奖杯图标1.png"
+            class="backtop"
+            alt="返回顶部图标"
+            title="返回顶部"
+        />
+
+        <!-- 欧冠背景图 -->
+        <div class="datu">
+            <!-- 向下按钮 -->
+            <i class="iconfont icon-xiangxia" id="anniu"></i>
+        </div>
+        <!-- 向下按钮js -->
+        <script>
+            // function scrollToBottom(duration) {
+            //     // cancel if already on top
+            //     if (
+            //         document.scrollingElement.scrollTop ===
+            //         document.body.scrollHeight
+            //     )
+            //         return;
+
+            //     const totalScrollDistance = document.body.scrollHeight;
+            //     let scrollY = totalScrollDistance,
+            //         oldTimestamp = null;
+
+            //     function step(newTimestamp) {
+            //         if (oldTimestamp !== null) {
+            //             // if duration is 0 scrollY will be -Infinity
+            //             scrollY +=
+            //                 (totalScrollDistance *
+            //                     (newTimestamp - oldTimestamp)) /
+            //                 duration;
+            //             console.info(scrollY);
+            //             if (scrollY >= document.body.scrollHeight)
+            //                 return (document.scrollingElement.scrollTop =
+            //                     document.body.scrollHeight);
+            //             document.scrollingElement.scrollTop = scrollY;
+            //         }
+            //         oldTimestamp = newTimestamp;
+            //         window.requestAnimationFrame(step);
+            //     }
+            //     window.requestAnimationFrame(step);
+            // }
+
+            var xiangxia = document.getElementById("anniu");
+            xiangxia.addEventListener("click", function () {
+                //获取页面可视区高度
+                var clientHeight = document.documentElement.clientHeight;
+                // window.scrollTo(0, clientHeight);
+                // scrollToBottom(500);
+                window.scroll({
+                    top: document.documentElement.scrollHeight,
+                    left: 0,
+                    behavior: "smooth",
+                });
+            });
+        </script>
+
+        <!-- 了解欧冠 -->
+        <div class="ouguanls">
+            <h1>了解欧冠</h1>
+            <h4>欧冠的来龙去脉</h4>
+            <img
+                src="images/欧冠图/白色欧冠a.jpg"
+                alt="欧冠图"
+                title="欧冠"
+                id="youqiu"
+            />
+            <h2>诞生</h2>
+            <p class="liaojie">
+                二战结束后，足球运动在世界范围内全面复兴，法国人加布里埃尔·亚诺提出了创立欧洲俱乐部杯赛的构想。第一届欧冠于1955年举办，最终由皇家马德里队夺冠，于1992年比赛正式更名为“欧洲冠军联赛”，欧冠距今已有67年的历史。
             </p>
-            <div class="saizhi">赛制</div>
-            <p class="saizhi1">
-                小组赛阶段，有32支球队参加，他们会分成8个小组，每组4支球队，每组中的头两名晋级第一轮淘汰赛。<br />
-                淘汰赛阶段，从16强到半决赛，每支球队都会与每轮的对手进行主客两场比赛。<br />
-                决赛采用一场定胜负，若双方90分钟内战平，双方须完成上、下半场各15分钟的加时赛，加时赛进球较多者胜出，若仍未能分出胜负，则双方互罚点球决出胜负。
+            <h2>介绍</h2>
+            <p class="liaojie">
+                欧洲冠军联赛（UEFA Champions
+                League，简称“欧冠联赛”或“欧冠”）是欧洲足球协会联盟主办的年度足球比赛，代表欧洲俱乐部足球最高水平和荣誉。先后有22支俱乐部获得过欧冠冠军，夺冠次数最多的球队是“皇家马德里”共13次。
             </p>
         </div>
-    </div>
 
-    <!-- 热门比赛 -->
-    <div class="ouguansj" style="height: 1000px">
-        <h1>热门比赛</h1>
-        <h4>欧冠热度最高的比赛</h4>
-        <div class="rmwai">
-            <div class="rmshang">
-                <img src="images/index/皇马曼城2a.jpg" alt="皇马vs曼城" />
-                <p class="hm1">半决赛次回合-皇马3-1逆转曼城</p>
-                <p class="hm2">
-                    2021-2022赛季欧洲足球冠军联赛半决赛4日结束次回合之战，西甲皇家马德里队主场通过加时赛以3:1逆转英超曼城队，两回合总比分6:5淘汰对手涉险晋级。<br />
-                    带着首回合客场3:4输球的劣势，皇马在第73分钟先丢一球陷入绝境。但替补出战的小将罗德里戈在第90分钟和第91分钟连入两球，最终“银河战舰”凭借本泽马进球绝杀比赛。
+        <!-- 欧冠规则 -->
+        <div class="ouguanls">
+            <h1>欧冠规则</h1>
+            <h4>欧冠的比赛规则</h4>
+            <img src="images/index/欧冠奖杯图1.jpeg" alt="" id="zuobei" />
+            <div class="youls">
+                <div class="xuanba">选拔</div>
+                <p class="guize">
+                    分组赛阶段有32个名额，其中16个直接分配给卫冕球队和15支来自欧洲最高排名的联赛冠军及亚军。剩下的就要打附加赛来确定才加参赛名额，参加附加赛的球队都是欧洲各国联赛的冠军。
                 </p>
-            </div>
-            <div class="rmzuo">
-                <img
-                    src="images/index/比利亚雷亚尔.jpeg"
-                    alt="拜仁vs黄潜"
-                    class="bili"
-                />
-                <p class="bili1">出色的黑马！利亚雷亚尔挺进欧冠四强</p>
-                <p class="bili2">
-                    比利亚雷亚尔客场1:1逼平拜仁慕尼黑，两回合总比分2:1淘汰德甲领头羊，时隔16年再次闯入欧冠半决赛。
-                </p>
-            </div>
-            <div class="rmyou">
-                <img
-                    src="images/index/利物浦本菲卡.jpeg"
-                    alt=""
-                    class="bfk"
-                />
-                <p class="bfk1">进球大战！利物浦主场3-3战平本菲卡晋级</p>
-                <p class="bfk2">
-                    欧冠联赛1/4决赛次回合，本菲卡3-3艰难追平，利物浦凭借首回合客场的优势，以6-4的总比分挺进四强。
+                <div class="saizhi">赛制</div>
+                <p class="saizhi1">
+                    小组赛阶段，有32支球队参加，他们会分成8个小组，每组4支球队，每组中的头两名晋级第一轮淘汰赛。<br />
+                    淘汰赛阶段，从16强到半决赛，每支球队都会与每轮的对手进行主客两场比赛。<br />
+                    决赛采用一场定胜负，若双方90分钟内战平，双方须完成上、下半场各15分钟的加时赛，加时赛进球较多者胜出，若仍未能分出胜负，则双方互罚点球决出胜负。
                 </p>
             </div>
         </div>
-    </div>
 
-    <!-- 欧冠数据 -->
-    <div class="ouguansj waike">
-        <h1>欧冠数据</h1>
-        <h4>欧冠排行榜</h4>
-        <div class="sheshou1">
-            <div id="dangsaiji">当赛季射手排行榜</div>
-            <table id="dsshe">
-                <tr>
-                    <th>排名</th>
-                    <th>球员</th>
-                    <th style="width: 110px">国家</th>
-                    <th>进球</th>
-                </tr>
-
-                <tr>
-                    <td style="color: #ff0000">1</td>
-                    <td>本泽马</td>
-                    <td>法国</td>
-                    <td>15球</td>
-                </tr>
-
-                <tr>
-                    <td style="color: #fa9a00">2</td>
-                    <td>莱万多夫斯基</td>
-                    <td>波兰</td>
-                    <td>15球</td>
-                </tr>
-
-                <tr>
-                    <td style="color: #579e00">3</td>
-                    <td>阿莱</td>
-                    <td>法国</td>
-                    <td>15球</td>
-                </tr>
-
-                <tr>
-                    <td>4</td>
-                    <td>萨拉赫</td>
-                    <td>埃及</td>
-                    <td>8球</td>
-                </tr>
-
-                <tr>
-                    <td>5</td>
-                    <td>恩坤库</td>
-                    <td>法国</td>
-                    <td>7球</td>
-                </tr>
-
-                <tr>
-                    <td>6</td>
-                    <td>C罗</td>
-                    <td>葡萄牙</td>
-                    <td>6球</td>
-                </tr>
-
-                <tr>
-                    <td>7</td>
-                    <td>梅西</td>
-                    <td>巴黎圣日耳曼</td>
-                    <td>5球</td>
-                </tr>
-
-                <tr>
-                    <td>8</td>
-                    <td>格列兹曼</td>
-                    <td>马德里竞技</td>
-                    <td>4球</td>
-                </tr>
-            </table>
-        </div>
-        <!-- 球队榜 -->
-        <div class="qiudui">
-            <div class="qiudui1">欧冠球队排行榜</div>
-            <table class="qiudiuph">
-                <tr>
-                    <th>排名</th>
-                    <th style="width: 150px">球队</th>
-                    <th>进球</th>
-                    <th>失球</th>
-                </tr>
-
-                <tr>
-                    <td style="color: #ff0000">1</td>
-                    <td>拜仁慕尼黑</td>
-                    <td>31</td>
-                    <td>7</td>
-                </tr>
-
-                <tr>
-                    <td style="color: #fa9a00">2</td>
-                    <td>利物浦</td>
-                    <td>30</td>
-                    <td>13</td>
-                </tr>
-
-                <tr>
-                    <td style="color: #579e00">3</td>
-                    <td>曼城</td>
-                    <td>29</td>
-                    <td>16</td>
-                </tr>
-
-                <tr>
-                    <td>4</td>
-                    <td>皇家马德里</td>
-                    <td>28</td>
-                    <td>14</td>
-                </tr>
-
-                <tr>
-                    <td>5</td>
-                    <td>阿贾克斯</td>
-                    <td>22</td>
-                    <td>8</td>
-                </tr>
-
-                <tr>
-                    <td>6</td>
-                    <td>切尔西</td>
-                    <td>21</td>
-                    <td>10</td>
-                </tr>
-
-                <tr>
-                    <td>7</td>
-                    <td>比利亚雷亚尔</td>
-                    <td>20</td>
-                    <td>16</td>
-                </tr>
-
-                <tr>
-                    <td>8</td>
-                    <td>巴黎圣日耳曼</td>
-                    <td>15</td>
-                    <td>11</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- 赞助模块 -->
-    <div class="zanzhu">
-        <div class="zanzhu1">欧冠赞助商</div>
-
-        <div class="gxw">
-            <div class="ganxie">感谢以上赞助商支持</div>
+        <!-- 热门比赛 -->
+        <div class="ouguansj" style="height: 1000px">
+            <h1>热门比赛</h1>
+            <h4>欧冠热度最高的比赛</h4>
+            <div class="rmwai">
+                <div class="rmshang">
+                    <img src="images/index/皇马曼城2a.jpg" alt="皇马vs曼城" />
+                    <p class="hm1">半决赛次回合-皇马3-1逆转曼城</p>
+                    <p class="hm2">
+                        2021-2022赛季欧洲足球冠军联赛半决赛4日结束次回合之战，西甲皇家马德里队主场通过加时赛以3:1逆转英超曼城队，两回合总比分6:5淘汰对手涉险晋级。<br />
+                        带着首回合客场3:4输球的劣势，皇马在第73分钟先丢一球陷入绝境。但替补出战的小将罗德里戈在第90分钟和第91分钟连入两球，最终“银河战舰”凭借本泽马进球绝杀比赛。
+                    </p>
+                </div>
+                <div class="rmzuo">
+                    <img
+                        src="images/index/比利亚雷亚尔.jpeg"
+                        alt="拜仁vs黄潜"
+                        class="bili"
+                    />
+                    <p class="bili1">出色的黑马！利亚雷亚尔挺进欧冠四强</p>
+                    <p class="bili2">
+                        比利亚雷亚尔客场1:1逼平拜仁慕尼黑，两回合总比分2:1淘汰德甲领头羊，时隔16年再次闯入欧冠半决赛。
+                    </p>
+                </div>
+                <div class="rmyou">
+                    <img
+                        src="images/index/利物浦本菲卡.jpeg"
+                        alt=""
+                        class="bfk"
+                    />
+                    <p class="bfk1">进球大战！利物浦主场3-3战平本菲卡晋级</p>
+                    <p class="bfk2">
+                        欧冠联赛1/4决赛次回合，本菲卡3-3艰难追平，利物浦凭借首回合客场的优势，以6-4的总比分挺进四强。
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <p class="zanzhu2">
-            喜力啤酒 | 阿迪达斯 | 杰士邦 | 索尼 | 万事达卡 | 百事公司
-            <br />
-            SONY | Just Eat | Expedia | Gazprom | FedEx
-        </p>
-    </div>
+        <!-- 欧冠数据 -->
+        <div class="ouguansj waike">
+            <h1>欧冠数据</h1>
+            <h4>欧冠排行榜</h4>
+            <div class="sheshou1">
+                <div id="dangsaiji">当赛季射手排行榜</div>
+                <table id="dsshe">
+                    <tr>
+                        <th>排名</th>
+                        <th>球员</th>
+                        <th style="width: 110px">国家</th>
+                        <th>进球</th>
+                    </tr>
 
-    <!-- 底部页脚 -->
-    <footer>
-        <p>「Champions League」</p>
-        <p>永远不要低估一颗冠军的心</p>
-        <p>©copyright UEFA. All rights reserved.</p>
-    </footer>
-</body>
+                    <tr>
+                        <td style="color: #ff0000">1</td>
+                        <td>本泽马</td>
+                        <td>法国</td>
+                        <td>15球</td>
+                    </tr>
+
+                    <tr>
+                        <td style="color: #fa9a00">2</td>
+                        <td>莱万多夫斯基</td>
+                        <td>波兰</td>
+                        <td>15球</td>
+                    </tr>
+
+                    <tr>
+                        <td style="color: #579e00">3</td>
+                        <td>阿莱</td>
+                        <td>法国</td>
+                        <td>15球</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>萨拉赫</td>
+                        <td>埃及</td>
+                        <td>8球</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>恩坤库</td>
+                        <td>法国</td>
+                        <td>7球</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>C罗</td>
+                        <td>葡萄牙</td>
+                        <td>6球</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>梅西</td>
+                        <td>巴黎圣日耳曼</td>
+                        <td>5球</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>格列兹曼</td>
+                        <td>马德里竞技</td>
+                        <td>4球</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 球队榜 -->
+            <div class="qiudui">
+                <div class="qiudui1">欧冠球队排行榜</div>
+                <table class="qiudiuph">
+                    <tr>
+                        <th>排名</th>
+                        <th style="width: 150px">球队</th>
+                        <th>进球</th>
+                        <th>失球</th>
+                    </tr>
+
+                    <tr>
+                        <td style="color: #ff0000">1</td>
+                        <td>拜仁慕尼黑</td>
+                        <td>31</td>
+                        <td>7</td>
+                    </tr>
+
+                    <tr>
+                        <td style="color: #fa9a00">2</td>
+                        <td>利物浦</td>
+                        <td>30</td>
+                        <td>13</td>
+                    </tr>
+
+                    <tr>
+                        <td style="color: #579e00">3</td>
+                        <td>曼城</td>
+                        <td>29</td>
+                        <td>16</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>皇家马德里</td>
+                        <td>28</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>阿贾克斯</td>
+                        <td>22</td>
+                        <td>8</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>切尔西</td>
+                        <td>21</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>比利亚雷亚尔</td>
+                        <td>20</td>
+                        <td>16</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>巴黎圣日耳曼</td>
+                        <td>15</td>
+                        <td>11</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 赞助模块 -->
+        <div class="zanzhu">
+            <div class="zanzhu1">欧冠赞助商</div>
+
+            <div class="gxw">
+                <div class="ganxie">感谢以上赞助商支持</div>
+            </div>
+
+            <p class="zanzhu2">
+                喜力啤酒 | 阿迪达斯 | 杰士邦 | 索尼 | 万事达卡 | 百事公司
+                <br />
+                SONY | Just Eat | Expedia | Gazprom | FedEx
+            </p>
+        </div>
+
+        <!-- 底部页脚 -->
+        <footer>
+            <p>「Champions League」</p>
+            <p>永远不要低估一颗冠军的心</p>
+            <p>©copyright UEFA. All rights reserved.</p>
+        </footer>
+    </body>
 </html>

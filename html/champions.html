@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/backtop.css" />
     <link rel="stylesheet" href="../css/typewriter.css" />
-    <link rel="stylesheet" href="../css/champions.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/champions.css" />
     <script src="../js/backtop.js"></script>
 </head>
 <body>
     <!-- 横导航栏 -->
     <header class="genzong">
-        <img src="../images/欧冠图/欧冠透明.png" alt="" />                                  
+        <img src="../images/欧冠图/欧冠透明.png" alt="" />
         <a href="../index.html">
             <div>欧冠首页</div>
         </a>
@@ -26,7 +26,7 @@
         <a href="classical.html">
             <div>经典比赛</div>
         </a>
-        <a href="#">
+        <a href="halloffame.html">
             <div>欧冠巨星</div>
         </a>
         <a href="#">
@@ -205,16 +205,18 @@
             var zuo = document.querySelectorAll(".zuo");
             // alert('you[0]');
             for (var i = 0; i < you.length; i++) {
-                // 给对象添加一个index属性，用来储存索引的值.索引是和i相同的。
+                // 给对象添加一个index属性，用来储存索引的值.索引是和i相同的。不理解you[i].index有什么用，不加会报错
                 you[i].index = i;
                 zuo[i].style.opacity = "0.5";
                 you[i].onmouseover = function () {
                     let j = this.index;
                     zuo[j].style.opacity = "1";
+                    zuo[j].style.transform = "translateY(-" + 1 + "px)";
                 };
                 you[i].onmouseout = function () {
                     let j = this.index;
                     zuo[j].style.opacity = "0.5";
+                    zuo[j].style.transform = "translateY(" + 1 + "px)";
                 };
             }
             // you.addEventListener("mouseover", function () {

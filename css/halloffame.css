@@ -1,0 +1,39 @@
+/* 顶部横导航 */
+.yidong {
+    left: 660px;
+}
+.genzong a:nth-of-type(1):hover ~ .yidong {
+    left: 300px;
+}
+
+/* 打字机 */
+.gekai {
+    margin: 0 auto 100px;
+}
+.gekai:before {
+    content: "H-A-L-L O-F F-A-M-E";
+}
+
+/* 名人堂 */
+.mrt {
+    position: relative;
+    height: auto;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.mrt > h1 {
+    /* color: #1e88e5; */
+    font-size: 2.6rem;
+    color: #417ec4;
+    margin: 20px 0 10px 30px;
+}
+.mrt > h4 {
+    color: #2a89e7;
+    margin: 0 0 10px 30px;
+}
