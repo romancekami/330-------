@@ -17,7 +17,7 @@
 /* 名人堂 */
 .mrt {
     position: relative;
-    height: 1000px;
+    height: 700px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
     margin: 30px auto;
@@ -25,6 +25,8 @@
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
+    perspective: 2000px;
+    background: linear-gradient(332deg, #3885eb 35%, #ffffff 94%);
 }
 .mrt > h1 {
     /* color: #1e88e5; */
@@ -35,6 +37,172 @@
 .mrt > h4 {
     color: #2a89e7;
     margin: 0 0 10px 30px;
+}
+/* 旋转木马 */
+/* .lanwai {
+    position: absolute;
+    background-color: #62a3ee;
+    height: 570px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+} */
+.mrt > section {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 80px auto;
+    transform-style: preserve-3d;
+    /* background-color: #3c71e0; */
+    animation: xuanzhuan 14s linear infinite;
+}
+@keyframes xuanzhuan {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+.mrt > section:hover {
+    animation-play-state: paused;
+}
+
+.mrt > section div {
+    position: absolute;
+    background-color: #3c71e0;
+    top: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: auto;
+    height: 410px;
+    background: url(../images/superstar/拉莫斯.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    /* animation: xuanzhuan 8s linear infinite; */
+}
+.mrt > section div:hover {
+    box-shadow: 1px 1px 15px 1px #cfddf1;
+}
+section div:nth-child(1) {
+    transform: rotateY(0deg) translateZ(350px);
+}
+section div:nth-child(2) {
+    transform: rotateY(60deg) translateZ(350px);
+}
+section div:nth-child(3) {
+    transform: rotateY(120deg) translateZ(350px);
+}
+section div:nth-child(4) {
+    transform: rotateY(180deg) translateZ(350px);
+}
+section div:nth-child(5) {
+    transform: rotateY(240deg) translateZ(350px);
+}
+section div:nth-child(6) {
+    transform: rotateY(300deg) translateZ(350px);
+}
+/* 6位球星介绍 */
+.sixstar {
+    width: 84%;
+    margin: 30px auto 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #82a8e2;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 25px;
+    height: 2000px;
+}
+div[class^="san"] {
+    /* background-color: #a3c2e4; */
+    background-color: rgba(126, 168, 236, 0.164);
+    width: 70%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 15px 5px rgb(80, 139, 46); */
+}
+.san2,
+.san4,
+.san6 {
+    /* position: relative; */
+    margin: 30px 0;
+    margin-left: 30%;
+}
+[class^="san"]:hover {
+    box-shadow: 2px 2px 16px 3px rgb(138, 180, 235);
+    background-color: rgba(152, 226, 163, 0.4);
+}
+.imghid {
+    background-color: rgba(241, 166, 68, 0.815);
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+.sixstar > .san2 > .imghid,
+.sixstar > .san4 > .imghid,
+.sixstar > .san6 > .imghid {
+    margin-left: 70%;
+}
+[class^="nei"] {
+    background-color: pink;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    /* display: inline-block; */
+}
+.nei1 {
+    background: url(../images/homepage/三部动漫图/吸血鬼猎人D三1.jpg) no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.nei2 {
+    background: url(../images/homepage/三部动漫图/地狱之歌三2a.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.nei3 {
+    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nei4 {
+    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nei5 {
+    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nei6 {
+    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+[class^="nei"]:hover {
+    transform: scale(1.15);
+}
+.wenzi {
+    background-color: rgba(80, 156, 255, 0.616);
+    position: relative;
+    width: 62%;
+    left: 34%;
+    bottom: 300px;
+    line-height: 2;
+    font-size: large;
+    margin-top: 2%;
+    color: rgb(222, 233, 218);
+}
+.san2 .wenzi:nth-of-type(2),.san4 .wenzi:nth-of-type(2),.san6 .wenzi:nth-of-type(2) {
+    left: 4%;
 }
 
 /* 知名教练 */
