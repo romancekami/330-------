@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/index.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <script src="js/backtop.js"></script>
+        <script src="js/slide.js"></script>
     </head>
 
     <body>
@@ -58,49 +59,31 @@
         </div>
         <!-- 向下按钮js -->
         <script>
-            // function scrollToBottom(duration) {
-            //     // cancel if already on top
-            //     if (
-            //         document.scrollingElement.scrollTop ===
-            //         document.body.scrollHeight
-            //     )
-            //         return;
+            window.addEventListener("load", function () {
+                var xiangxia = document.getElementById("anniu");
+                // 获取页面高度
+                var clientHeight = document.documentElement.clientHeight;
+                xiangxia.onclick = function () {
+                    // top: document.body.clientHeight,
+                    ScrollTop(clientHeight, 130);
+                };
+            });
 
-            //     const totalScrollDistance = document.body.scrollHeight;
-            //     let scrollY = totalScrollDistance,
-            //         oldTimestamp = null;
-
-            //     function step(newTimestamp) {
-            //         if (oldTimestamp !== null) {
-            //             // if duration is 0 scrollY will be -Infinity
-            //             scrollY +=
-            //                 (totalScrollDistance *
-            //                     (newTimestamp - oldTimestamp)) /
-            //                 duration;
-            //             console.info(scrollY);
-            //             if (scrollY >= document.body.scrollHeight)
-            //                 return (document.scrollingElement.scrollTop =
-            //                     document.body.scrollHeight);
-            //             document.scrollingElement.scrollTop = scrollY;
-            //         }
-            //         oldTimestamp = newTimestamp;
-            //         window.requestAnimationFrame(step);
-            //     }
-            //     window.requestAnimationFrame(step);
+            // function smoothScroll() {
+            //     window.scrollTo({
+            //         top: clientHeight,
+            //         left: 0,
+            //         behavior: "smooth",
+            //     });
             // }
 
-            var xiangxia = document.getElementById("anniu");
-            xiangxia.addEventListener("click", function () {
-                //获取页面可视区高度
-                var clientHeight = document.documentElement.clientHeight;
-                // window.scrollTo(0, clientHeight);
-                // scrollToBottom(500);
-                window.scroll({
-                    top: document.documentElement.clientHeight,
-                    left: 0,
-                    behavior: "smooth",
-                });
-            });
+            // xiangxia.addEventListener("click", function () {
+            //     smoothScroll();
+            //     //获取页面可视区高度
+            //     // var clientHeight = document.documentElement.clientHeight;
+            //     // window.scrollTo(0, clientHeight);
+            //     // scrollToBottom(500);
+            // });
         </script>
 
         <!-- 了解欧冠 -->

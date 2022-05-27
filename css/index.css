@@ -1,6 +1,7 @@
-body {
+body,html {
     /* height: 4500px; */
     background-color: #f5f5f5;
+    /* scroll-behavior: smooth!important; */
 }
 
 /* 返回顶部图标 */
