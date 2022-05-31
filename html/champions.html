@@ -205,7 +205,7 @@
             var zuo = document.querySelectorAll(".zuo");
             // alert('you[0]');
             for (var i = 0; i < you.length; i++) {
-                // 给对象添加一个index属性，用来储存索引的值.索引是和i相同的。不理解you[i].index有什么用，不加会报错
+                // 给对象添加一个index属性，用来储存索引的值.索引是和i相同的。you[i].index即下面的this.index
                 you[i].index = i;
                 zuo[i].style.opacity = "0.5";
                 you[i].onmouseover = function () {
