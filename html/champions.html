@@ -211,12 +211,14 @@
                 you[i].onmouseover = function () {
                     let j = this.index;
                     zuo[j].style.opacity = "1";
-                    zuo[j].style.transform = "translateY(-" + 1 + "px)";
+                    // zuo[j].style.transform = "translateY(-" + 1 + "px)";
+                    zuo[j].style.transform = "rotateZ(-" + 2 + "deg)";
                 };
                 you[i].onmouseout = function () {
                     let j = this.index;
                     zuo[j].style.opacity = "0.5";
-                    zuo[j].style.transform = "translateY(" + 1 + "px)";
+                    // zuo[j].style.transform = "translateY(" + 1 + "px)";
+                    zuo[j].style.transform = "rotateZ(" + 0 + "deg)";
                 };
             }
             // you.addEventListener("mouseover", function () {

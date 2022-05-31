@@ -51,11 +51,12 @@
     border-radius: 10px;
     /* background-color: #ccc; */
     box-shadow: 3px 3px 15px 0 #82a8e2;
-    /* transition: 0.3s ease; */
+    transition: 0.3s ease;
 }
 .zuo:hover {
     opacity: 1!important;
     transform: translateY(-1px)!important;
+    /* transform: translateY(-5px) rotateZ(-2deg)!important; */
 }
 .zuo > h2 {
     font-size: 1.5rem;
