@@ -283,9 +283,9 @@
 .rao2 h2 {
     font-size: 2.4rem;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     color: #4b8ad3;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .rao2 span {
     position: relative;
@@ -302,6 +302,7 @@
 }
 .rao2:hover h2 {
     color: #728bbb;
+    transform: translateY(-5px);
 }
 .rao2:hover span {
     border: 0;
