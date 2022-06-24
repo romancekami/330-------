@@ -49,6 +49,19 @@
     background-color: #70acf0;
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
 }
+span[class=you1] > img {
+    position: absolute;
+    right: 30px;
+    width: 72%;
+    top: 170px;
+    height: 310px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+span[class=you1] > img:hover {
+    transform: rotate(3deg);
+    box-shadow: 5px 5px 15px 5px #d2dff5;
+}
 
 /* 左半边 */
 .bisai1 > .zuo1 {
