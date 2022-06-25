@@ -51,10 +51,9 @@
 }
 span[class="you1"] > img {
     position: absolute;
-    right: 30px;
-    width: 72%;
-    top: 170px;
-    height: 310px;
+    right: 34px;
+    width: 64%;
+    top: 60px;
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -158,7 +157,7 @@ span[class="you1"] > img:hover {
 .bisaity2 >img:hover {
     /* transform: rotate(3deg); */
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: zhuan3deg 0.7s forwards;
+    animation: zhuan3deg 0.6s forwards;
 }
 @keyframes zhuan3deg {
     0% {
@@ -211,9 +210,9 @@ span[class="you1"] > img:hover {
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
 }
 .bisaity3 {
-    width: 80%;
+    width: 85%;
     position: absolute;
-    height: 70%;
+    height: 75%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -242,19 +241,19 @@ span[class="you1"] > img:hover {
     letter-spacing: 2px;
     text-align: justify;
     line-height: 1.4;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     width: 85%;
 }
 .bisaity3 > img {
     position: absolute;
     width: 40%;
-    height: 410px;
+    height: 440px;
     right: 20px;
     top: 20px;
     border-radius: 10px;
 }
 .bisaity3 > img:hover {
-    animation: zhuan3deg 0.7s forwards;
+    animation: zhuan3deg 0.6s forwards;
 }
 
 /* 第4场 */
@@ -268,9 +267,9 @@ span[class="you1"] > img:hover {
     clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
 }
 .bisaity4 {
-    width: 80%;
+    width: 85%;
     position: absolute;
-    height: 70%;
+    height: 75%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -282,6 +281,39 @@ span[class="you1"] > img:hover {
     backdrop-filter: blur(3px);
     box-shadow: 5px 5px 15px 0 rgba(251, 245, 245, 0.6);
     color: #fff;
+}
+.youwen4 {
+    position: absolute;
+    right: 30px;
+    width: 46%;
+    top: 22px;
+}
+.youwen4 > h2 {
+    color: #5192e7;
+    margin: 0 0 10px 0px;
+}
+.youwen4 > p {
+    color: #54a3f1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.youwen4 > p:nth-of-type(2) {
+    position: absolute;
+    width: 93%;
+    right: 0;
+}
+.bisaity4 > img {
+    position: absolute;
+    width: 36%;
+    left: 28px;
+    top: 24px;
+    border-radius: 10px;
+}
+.bisaity4 > img:hover {
+    animation: zhuan3deg 0.6s forwards;
 }
 
 /* 第5场 */
@@ -295,9 +327,9 @@ span[class="you1"] > img:hover {
     clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
 }
 .bisaity5 {
-    width: 80%;
+    width: 85%;
     position: absolute;
-    height: 70%;
+    height: 75%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -309,4 +341,38 @@ span[class="you1"] > img:hover {
     backdrop-filter: blur(3px);
     box-shadow: 5px 5px 15px 0 rgba(251, 245, 245, 0.6);
     color: #fff;
+    overflow: hidden;
+}
+.zuowen5 {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 45%;
+    overflow: hidden;
+}
+.zuowen5 > h2 {
+    color: #5192e7;
+    margin: 0 0 10px 0px;
+}
+.zuowen5 > p {
+    color: #54a3f1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.zuowen5 > p:nth-of-type(2) {
+    width: 90%;
+}
+.bisaity5 > img {
+    position: absolute;
+    width: 36%;
+    height: 440px;
+    right: 22px;
+    top: 24px;
+    border-radius: 10px;
+}
+.bisaity5 > img:hover {
+    animation: zhuan3deg 0.5s forwards;
 }
