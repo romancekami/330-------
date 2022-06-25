@@ -49,7 +49,7 @@
     background-color: #70acf0;
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
 }
-span[class=you1] > img {
+span[class="you1"] > img {
     position: absolute;
     right: 30px;
     width: 72%;
@@ -58,7 +58,7 @@ span[class=you1] > img {
     border-radius: 10px;
     transition: 0.3s;
 }
-span[class=you1] > img:hover {
+span[class="you1"] > img:hover {
     transform: rotate(3deg);
     box-shadow: 5px 5px 15px 5px #d2dff5;
 }
@@ -130,12 +130,12 @@ span[class=you1] > img:hover {
     left: 0;
     height: 100%;
     background-color: #70acf0;
-    clip-path: polygon(0 0, 70% 0,100% 100% , 0 100%);
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
 }
 .bisaity2 {
-    width: 80%;
+    width: 85%;
     position: absolute;
-    height: 70%;
+    height: 75%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -148,6 +148,57 @@ span[class=you1] > img:hover {
     box-shadow: 5px 5px 15px 0 rgba(251, 245, 245, 0.6);
     color: #fff;
 }
+.bisaity2 >img {
+    position: absolute;
+    width: 38%;
+    border-radius: 10px;
+    left: 24px;
+    top: 30px;
+}
+.bisaity2 >img:hover {
+    /* transform: rotate(3deg); */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: zhuan3deg 0.7s forwards;
+}
+@keyframes zhuan3deg {
+    0% {
+    box-shadow: 5px 5px 15px 5px #e8eeff;
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    100% {
+    box-shadow: 5px 5px 15px 5px #e8eeff;
+    }
+}
+.youwen {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 47%;
+    /* background-color: pink; */
+}
+.youwen > h2 {
+    color: #5192e7;
+    margin: 0 0 10px 0px;
+    transform: translateX(10px);
+}
+.youwen > p {
+    color: #54a3f1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+.youwen > p:first-of-type {
+    transform: translateX(10px);
+}
+.youwen > p:nth-of-type(2) {
+    /* background-color: khaki; */
+    width: 90%;
+    float: right;
+}
 
 /* 第3场 */
 .bisaibj3 {
@@ -157,7 +208,7 @@ span[class=you1] > img:hover {
     right: 0;
     height: 100%;
     background-color: #70acf0;
-    clip-path: polygon(30% 0, 100% 0,100% 100% , 0 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
 }
 .bisaity3 {
     width: 80%;
@@ -175,6 +226,36 @@ span[class=you1] > img:hover {
     box-shadow: 5px 5px 15px 0 rgba(251, 245, 245, 0.6);
     color: #fff;
 }
+.bisaity3 > .zuowen {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 47%;
+}
+.bisaity3 > .zuowen > h2 {
+    color: #5192e7;
+    margin: 0 0 10px 0px;
+}
+.bisaity3 > .zuowen > p {
+    color: #54a3f1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    width: 85%;
+}
+.bisaity3 > img {
+    position: absolute;
+    width: 40%;
+    height: 410px;
+    right: 20px;
+    top: 20px;
+    border-radius: 10px;
+}
+.bisaity3 > img:hover {
+    animation: zhuan3deg 0.7s forwards;
+}
 
 /* 第4场 */
 .bisaibj4 {
@@ -184,7 +265,7 @@ span[class=you1] > img:hover {
     left: 0;
     height: 100%;
     background-color: #70acf0;
-    clip-path: polygon(0 0, 70% 0,100% 100% , 0 100%);
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
 }
 .bisaity4 {
     width: 80%;
@@ -211,7 +292,7 @@ span[class=you1] > img:hover {
     right: 0;
     height: 100%;
     background-color: #70acf0;
-    clip-path: polygon(28% 0, 100% 0,100% 100% , 0 100%);
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
 }
 .bisaity5 {
     width: 80%;
