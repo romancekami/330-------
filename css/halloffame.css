@@ -69,6 +69,7 @@
 }
 
 .mrt > section div {
+    box-sizing: border-box;
     position: absolute;
     background-color: #3c71e0;
     top: 0;
@@ -78,8 +79,8 @@
     margin: auto;
     width: auto;
     height: 410px;
-    background: url(../images/superstar/拉莫斯.jpg) no-repeat;
-    background-size: cover;
+    background-size: cover!important;
+    background-attachment:local!important;
     overflow: hidden;
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
@@ -90,20 +91,29 @@
 }
 section div:nth-child(1) {
     transform: rotateY(0deg) translateZ(350px);
+    background: url(../images/superstar/拉莫斯.jpg) no-repeat;
 }
 section div:nth-child(2) {
     transform: rotateY(60deg) translateZ(350px);
+    /* background-size: cover; */
+    background-attachment: scroll;
+    background: url(../images/superstar/梅西2.jpg) no-repeat;
 }
 section div:nth-child(3) {
+    background: url(../images/superstar/德罗巴1.jpg) no-repeat;
+    /* background-position-x: -25px; */
     transform: rotateY(120deg) translateZ(350px);
 }
 section div:nth-child(4) {
+    background: url(../images/superstar/C罗3.jpg) no-repeat;
     transform: rotateY(180deg) translateZ(350px);
 }
 section div:nth-child(5) {
+    background: url(../images/superstar/内马尔5.jpg) no-repeat;
     transform: rotateY(240deg) translateZ(350px);
 }
 section div:nth-child(6) {
+    background: url(../images/superstar/小罗2.jpg) no-repeat;
     transform: rotateY(300deg) translateZ(350px);
 }
 /* 6位球星介绍 */
@@ -135,7 +145,7 @@ div[class^="san"] {
 }
 [class^="san"]:hover {
     box-shadow: 2px 2px 16px 3px rgb(138, 180, 235);
-    background-color: rgba(152, 226, 163, 0.4);
+    background-color: rgba(213, 242, 255, 0.3);
 }
 .imghid {
     background-color: rgba(241, 166, 68, 0.815);
@@ -158,40 +168,40 @@ div[class^="san"] {
     /* display: inline-block; */
 }
 .nei1 {
-    background: url(../images/homepage/三部动漫图/吸血鬼猎人D三1.jpg) no-repeat;
-    background-position: top;
+    background: url(../images/superstar/拉莫斯2.jpg) no-repeat;
+    background-position: 0 0;
     background-size: cover;
 }
 .nei2 {
-    background: url(../images/homepage/三部动漫图/地狱之歌三2a.jpeg);
-    background-position: center;
+    background: url(../images/superstar/梅西3.jpg) no-repeat;
+    background-position:bottom;
     background-size: cover;
 }
 .nei3 {
-    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
-    background-position: center;
+    background: url(../images/superstar/德罗巴欧冠.jpg) no-repeat;
     background-size: cover;
+    background-position: right;
 }
 .nei4 {
-    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
-    background-position: center;
+    background: url(../images/superstar/C罗2.jpg) no-repeat;
+    background-position: bottom;
     background-size: cover;
 }
 .nei5 {
-    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
+    background: url(../images/superstar/内马尔4.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .nei6 {
-    background: url(../images/homepage/三部动漫图/死亡笔记三3a.jpg);
-    background-position: center;
+    background: url(../images/superstar/小罗1.jpg) no-repeat;
+    background-position: bottom;
     background-size: cover;
 }
 [class^="nei"]:hover {
     transform: scale(1.15);
 }
 .wenzi {
-    background-color: rgba(80, 156, 255, 0.616);
+    /* background-color: rgba(80, 156, 255, 0.616); */
     position: relative;
     width: 62%;
     left: 34%;
@@ -199,7 +209,8 @@ div[class^="san"] {
     line-height: 2;
     font-size: large;
     margin-top: 2%;
-    color: rgb(222, 233, 218);
+    color: #5192e7;
+    /* color: #54a3f1; */
 }
 .san2 .wenzi:nth-of-type(2),.san4 .wenzi:nth-of-type(2),.san6 .wenzi:nth-of-type(2) {
     left: 4%;

@@ -102,6 +102,7 @@ span[class="you1"] > img:hover {
     background-color: #fff;
     border: 2px solid rgb(103, 165, 246);
     cursor: pointer;
+    transition: 0.2s;
 }
 .genduo:hover {
     color: #fff;
