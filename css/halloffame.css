@@ -227,6 +227,7 @@ div[class^="san"] {
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 .jiaolian > h1 {
     /* color: #1e88e5; */
@@ -258,6 +259,8 @@ div[class^="san"] {
     height: 320px;
     background-color: #3c71e0;
     margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 4px solid white;
 }
 .jl1:hover,
 .jl2:hover {
@@ -325,6 +328,8 @@ div[class^="san"] {
     border-radius: 10px;
     width: 35%;
     height: 320px;
+    border: 4px solid white;
+    box-sizing: border-box;
     background-color: #3c71e0;
 }
 .jl3:hover,.jl4:hover {
@@ -342,6 +347,7 @@ div[class^="san"] {
     background-size: cover;
     background-position-x: -16px;
     margin-bottom: 30px;
+    margin-left: 5px;
 }
 .jl3wz,.jl4wz {
     font-size: 17px;
@@ -371,22 +377,6 @@ div[class^="san"] {
     padding-right: 0;
     /* background-color: khaki; */
     margin-left: 7px;
-}
-@keyframes biankuan{
-    from {
-        width: 0px;
-    }
-    to {
-        width: 270px;
-    }
-}
-@keyframes bianzhai{
-    from {
-        width: 270px;
-    }
-    to {
-        width: 0px;
-    }
 }
 @keyframes bianhua{
     0% {
