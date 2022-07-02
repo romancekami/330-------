@@ -219,7 +219,7 @@ div[class^="san"] {
 /* 知名教练 */
 .jiaolian {
     position: relative;
-    height: 1000px;
+    height: 970px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
     margin: 30px auto;
@@ -239,6 +239,7 @@ div[class^="san"] {
     margin: 0 0 10px 30px;
 }
 .jlshang {
+    border-radius: 10px;
     box-sizing: border-box;
     /* background-color: #82a8e2; */
     background-color: #7dbaff;
@@ -246,6 +247,7 @@ div[class^="san"] {
     height: 380px;
     margin-top: 20px;
     padding-top: 30px;
+    overflow: hidden;
 }
 .jl1,
 .jl2 {
@@ -255,6 +257,7 @@ div[class^="san"] {
     width: 35%;
     height: 320px;
     background-color: #3c71e0;
+    margin-bottom: 30px;
 }
 .jl1:hover,
 .jl2:hover {
@@ -290,7 +293,7 @@ div[class^="san"] {
     /* background-color: #5898ff; */
     
 }
-.jl2wz {
+.jiaolian > .jlshang > .jl2wz {
     width: 270px;
     /* width: 0px; */
     padding-right: 0;
@@ -313,6 +316,8 @@ div[class^="san"] {
     width: 100%;
     height: 380px;
     padding-top: 30px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .jl3,
 .jl4 {
@@ -330,11 +335,13 @@ div[class^="san"] {
     background: url(../images/superstar/克洛普5.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 30px;
 }
 .jl4 {
     background: url(../images/superstar/瓜迪奥拉1.jpg) no-repeat; 
     background-size: cover;
     background-position-x: -16px;
+    margin-bottom: 30px;
 }
 .jl3wz,.jl4wz {
     font-size: 17px;
@@ -351,15 +358,19 @@ div[class^="san"] {
 .jl3wz {
     width: 270px;
     height: 300px;
+    margin-bottom: 30px;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: bianzhai 2s ease 3s infinite alternate forwards;
+    animation: bianhua 10s ease 1s infinite;
     /* background-color: #5898ff; */
-    
+}
+.jl3wz:hover {
+    animation-play-state: paused;
 }
 .jl4wz {
-    width: 0;
+    max-width: 270px;
     padding-right: 0;
     /* background-color: khaki; */
+    margin-left: 7px;
 }
 @keyframes biankuan{
     from {
@@ -375,5 +386,27 @@ div[class^="san"] {
     }
     to {
         width: 0px;
+    }
+}
+@keyframes bianhua{
+    0% {
+        width: 0px;
+        padding: 0px;
+    }
+    40% {
+        width: 0px;
+        padding: 0px;
+    }
+    52% {
+        width: 270px;
+        padding: 8px;
+    }
+    88% {
+        width: 270px;
+        padding: 8px;
+    }
+    100% {
+        width: 0px;
+        padding: 0px;
     }
 }
