@@ -241,17 +241,24 @@ div[class^="san"] {
 .jlshang {
     box-sizing: border-box;
     /* background-color: #82a8e2; */
-    background-color: #72a8ff;
+    background-color: #7dbaff;
     width: 100%;
-    height: 300px;
+    height: 380px;
+    margin-top: 20px;
+    padding-top: 30px;
 }
 .jl1,
 .jl2 {
     float: left;
+    border-radius: 10px;
+    overflow: hidden;
     width: 35%;
-    height: 300px;
-
+    height: 320px;
     background-color: #3c71e0;
+}
+.jl1:hover,
+.jl2:hover {
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
 }
 .jl1 {
     margin-left: 30px;
@@ -270,6 +277,8 @@ div[class^="san"] {
     float: left;
     overflow: hidden;
     color: white;
+    /* background-color: antiquewhite;
+    color: rgb(189, 87, 248); */
     transition: width 0.4s ease;
     box-sizing: border-box;
     text-align: justify;
@@ -282,8 +291,10 @@ div[class^="san"] {
     
 }
 .jl2wz {
-    width: 0;
+    width: 270px;
+    /* width: 0px; */
     padding-right: 0;
+    display: none;
     /* background-color: khaki; */
 }
 /* .jlshang > .jl2:hover ~ .jl1wz {
@@ -292,3 +303,77 @@ div[class^="san"] {
 .jlshang > .jl2:hover ~ .jl2wz {
     width: 270px!important;
 } */
+
+/* 下面教练 */
+.jlxia {
+    margin-top: 40px;
+    box-sizing: border-box;
+    /* background-color: #82a8e2; */
+    background-color: #7dbaff;
+    width: 100%;
+    height: 380px;
+    padding-top: 30px;
+}
+.jl3,
+.jl4 {
+    float: left;
+    border-radius: 10px;
+    width: 35%;
+    height: 320px;
+    background-color: #3c71e0;
+}
+.jl3:hover,.jl4:hover {
+    box-shadow: 5px 5px 20px 5px rgba(228, 238, 255, 0.7);
+}
+.jl3 {
+    margin-left: 30px;
+    background: url(../images/superstar/克洛普5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.jl4 {
+    background: url(../images/superstar/瓜迪奥拉1.jpg) no-repeat; 
+    background-size: cover;
+    background-position-x: -16px;
+}
+.jl3wz,.jl4wz {
+    font-size: 17px;
+    line-height: 1.4;
+    padding: 8px;
+    float: left;
+    overflow: hidden;
+    color: white;
+    transition: width 0.4s ease;
+    box-sizing: border-box;
+    text-align: justify;
+    /* letter-spacing: 1px; */
+}
+.jl3wz {
+    width: 270px;
+    height: 300px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: bianzhai 2s ease 3s infinite alternate forwards;
+    /* background-color: #5898ff; */
+    
+}
+.jl4wz {
+    width: 0;
+    padding-right: 0;
+    /* background-color: khaki; */
+}
+@keyframes biankuan{
+    from {
+        width: 0px;
+    }
+    to {
+        width: 270px;
+    }
+}
+@keyframes bianzhai{
+    from {
+        width: 270px;
+    }
+    to {
+        width: 0px;
+    }
+}

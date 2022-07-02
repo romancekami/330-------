@@ -65,18 +65,18 @@
         <!-- </div> -->
     </div>
     <!-- <script>
-    // 鼠标进入暂停动画
-    var sec = document.querySelector(".mrt").querySelector("section");
-    var xzdiv = sec.querySelectorAll("div");
-    // console.log(xzdiv);
-    for (var i = 1; i < xzdiv.length; i++) {
-        xzdiv[i].addEventListener("mouseover", function () {
-            sec.style.animationPlayState = "paused";
-        });
-        xzdiv[i].addEventListener("mouseout", function () {
-            sec.style.animationPlayState = "running";
-        });
-    }
+// 鼠标进入暂停动画
+var sec = document.querySelector(".mrt").querySelector("section");
+var xzdiv = sec.querySelectorAll("div");
+// console.log(xzdiv);
+for (var i = 1; i < xzdiv.length; i++) {
+xzdiv[i].addEventListener("mouseover", function () {
+sec.style.animationPlayState = "paused";
+});
+xzdiv[i].addEventListener("mouseout", function () {
+sec.style.animationPlayState = "running";
+});
+}
 </script> -->
     <!-- 6位球星 -->
     <div class="sixstar">
@@ -161,6 +161,21 @@
                 此后穆里尼奥在02-03赛季带领波尔图夺得欧联杯冠军，03-04赛季带领波尔图夺得欧冠冠军，09-10赛季带领国米夺得了欧冠冠军，16-17赛季带领曼联拿到了欧联杯冠军。
             </div>
         </div>
+
+        <!-- 下面教练 -->
+        <div class="jlxia">
+            <div class="jl3"></div>
+            <div class="jl3wz">
+                2019-2020赛季欧冠决赛在里斯本光明球场展开，会师决赛的是来自德甲的拜仁慕尼黑和来自法甲的巴黎圣日尔曼。
+            </div>
+            <div class="jl4"></div>
+            <div class="jl4wz">
+                111若泽·穆里尼奥（José
+                Mourinho）,1963年1月26日出生于葡萄牙塞图巴尔，葡萄牙足球运动员、教练员，现任罗马足球俱乐部一线队主教练。<br />
+                1987年， 穆里尼奥在塞图巴尔胜利青年队开启执教生涯。
+                此后穆里尼奥在02-03赛季带领波尔图夺得欧联杯冠军，03-04赛季带领波尔图夺得欧冠冠军，09-10赛季带领国米夺得了欧冠冠军，16-17赛季带领曼联拿到了欧联杯冠军。
+            </div>
+        </div>
     </div>
     <!-- 教练1js部分 -->
     <script>
@@ -171,12 +186,20 @@
         jl2.addEventListener("mouseenter", function () {
             jl1wz.style.width = "0px";
             jl1wz.style.padding = "0px";
-            jl2wz.style.width = "270px";
+            setTimeout(function () {
+                jl2wz.style.display = "block";
+                jl2wz.style.padding = "8px";
+                jl2wz.style.paddingRight = "0px";
+                // jl2wz.style.width = "270px";
+            }, 320);
         });
         jl2.onmouseleave = function () {
-            jl1wz.style.width = "270px";
-            jl1wz.style.padding = "8px";
-        }
+                jl2wz.style.display = "none";
+                jl1wz.style.width = "270px";
+                jl1wz.style.padding = "8px";
+                // jl2wz.style.width = "0px";
+                jl2wz.style.padding = "0px";
+        };
     </script>
 
     <!-- 底部页脚 -->
