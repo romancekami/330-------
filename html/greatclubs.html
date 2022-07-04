@@ -83,16 +83,16 @@
                 </p>
             </div>
             <img
-                src="../images/greatclubs/安菲尔德2.jpg"
+                src="../images/greatclubs/安菲尔德1.jpg"
                 alt=""
                 class="yuanlai"
             />
         </div>
     </div>
 
-    <div class="haomeng2">
-        <div class="waibu2">
-            <div class="zuowen2">
+    <div class="haomeng3">
+        <div class="waibu3">
+            <div class="zuowen3">
                 <h2>曼联</h2>
                 <p>
                     利物浦是一家位于英格兰西北部默西赛德郡港口城市利物浦的足球俱乐部，成立于1892年，主场在安菲尔德球场，是英格兰足球超级联赛的球队之一。
@@ -109,9 +109,9 @@
         </div>
     </div>
 
-    <div class="haomeng2">
-        <div class="waibu2">
-            <div class="zuowen2">
+    <div class="haomeng4">
+        <div class="waibu4">
+            <div class="zuowen4">
                 <h2>皇家马德里</h2>
                 <p>
                     利物浦是一家位于英格兰西北部默西赛德郡港口城市利物浦的足球俱乐部，成立于1892年，主场在安菲尔德球场，是英格兰足球超级联赛的球队之一。
@@ -128,9 +128,9 @@
         </div>
     </div>
 
-    <div class="haomeng2">
-        <div class="waibu2">
-            <div class="zuowen2">
+    <div class="haomeng5">
+        <div class="waibu5">
+            <div class="zuowen5">
                 <h2>拜仁慕尼黑</h2>
                 <p>
                     利物浦是一家位于英格兰西北部默西赛德郡港口城市利物浦的足球俱乐部，成立于1892年，主场在安菲尔德球场，是英格兰足球超级联赛的球队之一。
@@ -147,9 +147,9 @@
         </div>
     </div>
 
-    <div class="haomeng2">
-        <div class="waibu2">
-            <div class="zuowen2">
+    <div class="haomeng6">
+        <div class="waibu6">
+            <div class="zuowen6">
                 <h2>尤文图斯</h2>
                 <p>
                     利物浦是一家位于英格兰西北部默西赛德郡港口城市利物浦的足球俱乐部，成立于1892年，主场在安菲尔德球场，是英格兰足球超级联赛的球队之一。
@@ -159,7 +159,7 @@
                 </p>
             </div>
             <img
-                src="../images/greatclubs/安菲尔德2.jpg"
+                src="../images/greatclubs/安菲尔德1.jpg"
                 alt=""
                 class="yuanlai"
             />
@@ -177,7 +177,7 @@
         var heise = document.getElementsByClassName("heise")[0];
         var close = document.querySelector(".close");
         var yuanlai = document.querySelectorAll(".yuanlai");
-        var fangda = document.querySelectorAll(".fangda");
+        // var fangda = document.querySelectorAll(".fangda");
         // 定义一个用来延迟显示关闭按钮的函数
         function xianshi() {
             close.style.display = "block";
@@ -196,6 +196,7 @@
                     // console.log(i);
                     // 下面的yuanlai[]里面不能是是i，因为此时i已经是1了，而不是0
                     yuanlai[yuanlai.index].className = "yuanlai";
+                    // console.log(yuanlai.index);
                     heise.style.display = "none";
                     setTimeout(function () {
                         close.style.display = "none";
