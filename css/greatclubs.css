@@ -11,6 +11,215 @@
     margin: 0 auto 100px;
 }
 .gekai:before {
-    content: "G-R-E-A-T-C-L-U-B-S";
+    content: "G-R-E-A-T C-L-U-B-S";
 }
-/* 名人堂 */
+/* 豪门球队 */
+.haomeng {
+    position: relative;
+    height: 800px;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* perspective: 2000px; */
+    background: linear-gradient(120deg,#f0f7ff 40%, rgba(167, 205, 255, 0.5) 100%);
+    /* background: #000; */
+}
+.haomeng > h1 {
+    /* color: #1e88e5; */
+    font-size: 2.6rem;
+    color: #448ada;
+    margin: 20px 0 10px 30px;
+}
+.haomeng > h4 {
+    color: #2a89e7;
+    margin: 0 0 10px 30px;
+}
+.waibu1 {
+    position: absolute;
+    margin: auto;
+    border-radius: 10px;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 560px;
+    /* height: 75%; */
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgb(159, 198, 255);
+    /* background-color: bisque; */
+}
+.waibu1::before{
+    content: '';
+    position: absolute;
+    background-color: #9bcbfa;
+    /* background-color: black!important; */
+    width: 56%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.waibu1::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 44%;
+    z-index: -1;
+}
+.zuowen1 {
+    position: absolute;
+    width: 44%;
+    top: 50px;
+    left: 60px;
+    /* background-color: aquamarine; */
+}
+.zuowen1 > h2 {
+    /* color: #5192e7; */
+    color: white;
+    margin: 0 0 10px 0px;
+}
+.zuowen1 > p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* 豪门2 */
+.haomeng2 {
+    position: relative;
+    height: 800px;
+    width: 84%;
+    box-shadow: 5px 5px 15px #82a8e2;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* perspective: 2000px; */
+    background: linear-gradient(200deg,#f0f7ff 70%, rgba(167, 205, 255, 0.7) 100%);
+}
+.waibu2 {
+    position: absolute;
+    margin: auto;
+    border-radius: 10px;
+    /* top: 60px; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 560px;
+    /* height: 75%; */
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgb(159, 198, 255);
+    /* background-color: bisque; */
+}
+.waibu2::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    /* background-color: black!important; */
+    width: 56%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.waibu2::after {
+    content: '';
+    position: absolute;
+    background-color: #9bcbfa;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 44%;
+    z-index: 0;
+}
+.zuowen2 {
+    position: absolute;
+    width: 44%;
+    top: 50px;
+    left: 60px;
+    /* background-color: aquamarine; */
+}
+.zuowen2 > h2 {
+    color: #5192e7;
+    margin: 0 0 10px 0px;
+}
+.zuowen2 > p {
+    color: #54a3f1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+
+.yuanlai {
+    position: absolute;
+    border-radius: 15px;
+    left: 61%;
+    top: 7%;
+    width: 34%;
+    height: 480px;
+    box-shadow: 5px 5px 15px 5px #a7caff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+/* 灯箱黑色背景 */
+.heise {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background-color: hsla(207, 85%, 68%, 0.55);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    display: none;
+}
+/* 灯箱放大图片部分 */
+.fangda {
+    position: fixed;
+    z-index: 5;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 26%;
+    box-shadow: 5px 5px 15px 5px #a7caff;
+    transition: 0.4s;
+    /* display: none; */
+}
+/* 灯箱关闭部分 */
+.close {
+    position: fixed;
+    z-index: 6;
+    border-radius: 50%;
+    right: 36%;
+    top: 3.6%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1.9rem;
+    /* font-weight: 300; */
+    color: white;
+    background-color: rgb(255, 228, 193);
+    cursor: pointer;
+    opacity: 0.95;
+    display: none;
+}
