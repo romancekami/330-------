@@ -23,4 +23,4 @@ var scrollSmoothTo = function (position) {
     step();
 };
 // 使用
-scrollSmoothTo(0);
+// scrollSmoothTo(0);
