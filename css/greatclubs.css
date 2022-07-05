@@ -466,7 +466,7 @@
     margin-bottom: 20px;
 }
 
-
+/* 6个俱乐部图片放大前通用样式 */
 .yuanlai {
     position: absolute;
     z-index: 1;
@@ -512,7 +512,7 @@
     position: fixed;
     z-index: 6;
     border-radius: 50%;
-    right: 36%;
+    right: 35.9%;
     top: 3.2%;
     width: 28px;
     height: 28px;
