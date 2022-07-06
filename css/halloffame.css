@@ -123,7 +123,7 @@ section div:nth-child(6) {
 /* 6位球星介绍 */
 .sixstar {
     width: 84%;
-    margin: 30px auto 50px;
+    margin: 40px auto 50px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #82a8e2;
     overflow: hidden;
