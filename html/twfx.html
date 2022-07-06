@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>天外飞仙</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <style>
+        .yidong {
+            left: 540px;
+        }
+        .genzong a:nth-of-type(1):hover ~ .yidong {
+            left: 300px;
+        }
+
+        /* 天外飞仙 */
+        .tianwai1 {
+            width: 84%;
+            margin: 90px auto 44px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            padding: 16px 30px 30px 30px;
+            box-shadow: 5px 5px 15px #86ace5;
+        }
+        /* 一个变长效果 */
+        #long-wz {
+            position: relative;
+            font-weight: 400;
+            width: 84%;
+            color: rgb(78, 157, 248);
+            padding-bottom: 4.5px;
+            padding-top: 5px;
+            letter-spacing: 1px;
+            margin: auto;
+            border-bottom: 2px dashed #609cdd;
+        }
+        #long-wz::before {
+            content: "";
+            position: absolute;
+            width: 9%;
+            height: 4px;
+            background-color: #7eb8f1;
+            top: 51px;
+            transition: 0.3s;
+        }
+        #long-wz:hover::before {
+            width: 100%;
+        }
+        .lankuang {
+            border: 1px solid transparent;
+            position: relative;
+            width: 84%;
+            height: 540px;
+            margin: 36px auto 52px;
+            border-radius: 10px;
+            /* padding: 30px; */
+            background-color: #80bdfd;
+            box-sizing: border-box;
+        }
+        .lankuang video {
+            display: block;
+            width: 700px;
+            margin: 70px auto 0;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px 2px #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <!-- 横导航栏 -->
+    <header class="genzong">
+        <img src="../images/欧冠图/欧冠透明.png" alt="" />
+        <a href="../index.html">
+            <div>欧冠首页</div>
+        </a>
+        <a href="champions.html">
+            <div>历代冠军</div>
+        </a>
+        <a href="classical.html">
+            <div>经典比赛</div>
+        </a>
+        <a href="halloffame.html">
+            <div>欧冠巨星</div>
+        </a>
+        <a href="greatclubs.html">
+            <div>豪门球队</div>
+        </a>
+        <a href="comment.html">
+            <div>问答评论</div>
+        </a>
+        <div class="yidong"></div>
+    </header>
+
+    <!-- 天外飞仙 -->
+    <div class="tianwai1">
+        <!--一个变长效果-->
+        <h1 id="long-wz">天外飞仙</h1>
+        <!-- 视频区 -->
+        <div class="lankuang">
+            <video
+                src="../images/classical/twfx/天外飞仙1.mp4"
+                controls
+                preload
+            ></video>
+        </div>
+    </div>
+    <!-- 底部页脚 -->
+    <footer>
+        <p>「Champions League」</p>
+        <p>永远不要低估一颗冠军的心</p>
+        <p>©copyright UEFA. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -104,6 +104,13 @@ span[class="you1"] > img:hover {
     cursor: pointer;
     transition: 0.2s;
 }
+.genduo > a {
+    color: #1b83eb;
+    text-decoration: none;
+}
+.genduo:hover > a {
+    color: #fff;
+}
 .genduo:hover {
     color: #fff;
     transform: translateY(-33px);
