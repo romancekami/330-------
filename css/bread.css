@@ -1,0 +1,24 @@
+/* 面包屑 */
+.bread {
+    /* background-color: khaki; */
+    /* color: #6eccd6; */
+    color: #54a3f1;
+    font-size: 1.4rem;
+    /* 调整单词与>号之间的距离 */
+    word-spacing: -2px;
+}
+.bread > a {
+    text-decoration: none;
+    /* color: #6eccd6; */
+    color: #54a3f1;
+}
+.bread > a:hover,
+.bread > span:hover {
+    /* color: #22a6b3; */
+    color: #267de7;
+}
+.bread > a:nth-of-type(2) {
+    font-weight: 600;
+    /* color: #22a6b3; */
+    color: #267de7;
+}

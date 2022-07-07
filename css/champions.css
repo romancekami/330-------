@@ -37,7 +37,7 @@
 /* wai最为父盒子包裹住左中右三个盒子 */
 .wai {
     width: 100%;
-    height: 350px;
+    height: 390px;
     /* background-color: skyblue; */
     margin: 0 auto;
     display: flex;
@@ -137,7 +137,7 @@
     width: 5px;
     background-color: #5dafe6;
     z-index: 0;
-    height: 2440px;
+    height: 2750px;
     left: 0;
     right: 0;
     margin: auto;

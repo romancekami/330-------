@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/bread.css">
     <style>
         .yidong {
             left: 540px;
@@ -19,7 +20,7 @@
         /* 天外飞仙 */
         .tianwai1 {
             width: 84%;
-            margin: 90px auto 44px;
+            margin: 100px auto 44px;
             border-radius: 15px;
             box-sizing: border-box;
             padding: 16px 30px 30px 30px;
@@ -54,7 +55,7 @@
             position: relative;
             width: 84%;
             height: 540px;
-            margin: 36px auto 52px;
+            margin: 36px auto 36px;
             border-radius: 10px;
             /* padding: 30px; */
             background-color: #80bdfd;
@@ -66,6 +67,22 @@
             margin: 70px auto 0;
             border-radius: 10px;
             box-shadow: 5px 5px 15px 2px #fafafa;
+        }
+        /* 面包屑增加样式 */
+        .bread {
+            width: 84%;
+            /* margin-left: 33%; */
+            margin: 0px auto 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #54a3f1;
+        }
+        .bread > a:nth-of-type(2) {
+            font-weight: 500;
+            color: #54a3f1;
+        }
+        .bread > a:last-of-type {
+            font-weight: 600;
+            color: #267de7;
         }
     </style>
 </head>
@@ -105,6 +122,14 @@
                 controls
                 preload
             ></video>
+        </div>
+        <!-- 面包屑 -->
+        <div class="bread">
+            <a href="classical.html">经典比赛</a>
+            <span>&gt;</span>
+            <a href="madrid.html">比赛细节</a>
+            <span>&gt;</span>
+            <a href="###">天外飞仙</a>
         </div>
     </div>
     <!-- 底部页脚 -->
