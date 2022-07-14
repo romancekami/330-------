@@ -29,8 +29,8 @@ header > a {
     /* background-color: rgba(235, 245, 178, 0.794); */
 }
 header > img:first-of-type {
-    width: 80px;
-    margin: 0 150px 0 70px;
+    /* width: 80px; */
+    margin: 0 135px 0 70px;
 }
 .yidong {
     /* display: flex; */
