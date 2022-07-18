@@ -74,7 +74,7 @@
 
 .zhong {
     width: 14%;
-    height: 80%;
+    height: 84%;
     /* background-color: #fff; */
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@
     width: 5px;
     background-color: #5dafe6;
     z-index: 0;
-    height: 2750px;
+    height: 2600px;
     left: 0;
     right: 0;
     margin: auto;
