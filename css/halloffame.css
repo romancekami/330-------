@@ -4,10 +4,7 @@ body {
 }
 /* 顶部横导航 */
 .yidong {
-    left: 660px;
-}
-.genzong a:nth-of-type(1):hover ~ .yidong {
-    left: 300px;
+    left: 360px;
 }
 
 /* 打字机 */

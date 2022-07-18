@@ -1,9 +1,6 @@
 /* 顶部横导航 */
 .yidong {
-    left: 540px;
-}
-.genzong a:nth-of-type(1):hover ~ .yidong {
-    left: 300px;
+    left: 240px;
 }
 body {
     /* 高度随便给个视口高度 */

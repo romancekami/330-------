@@ -1,14 +1,11 @@
 /* 顶部横导航 */
 .yidong {
-    left: 780px;
-}
-.genzong a:nth-of-type(1):hover ~ .yidong {
-    left: 300px;
+    left: 480px;
 }
 
 /* 打字机 */
 .gekai {
-    margin: 0 auto 100px;
+    margin: 0 auto 96px;
 }
 .gekai:before {
     content: "G-R-E-A-T C-L-U-B-S";
@@ -16,7 +13,7 @@
 /* 豪门球队 */
 .haomeng {
     position: relative;
-    height: 800px;
+    height: 780px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
     margin: 30px auto;
@@ -46,8 +43,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 80%;
-    height: 560px;
+    width: 82%;
+    height: 550px;
     /* height: 75%; */
     overflow: hidden;
     box-shadow: 5px 5px 15px rgb(159, 198, 255);
@@ -98,10 +95,10 @@
 /* 豪门2 */
 .haomeng2 {
     position: relative;
-    height: 770px;
+    height: 690px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
-    margin: 40px auto;
+    margin: 34px auto;
     background-color: #fff;
     border-radius: 10px;
     box-sizing: border-box;
@@ -118,8 +115,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 80%;
-    height: 560px;
+    width: 82%;
+    height: 550px;
     /* height: 75%; */
     overflow: hidden;
     box-shadow: 5px 5px 15px rgb(159, 198, 255);
@@ -169,10 +166,10 @@
 /* 豪门3 */
 .haomeng3 {
     position: relative;
-    height: 770px;
+    height: 690px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
-    margin: 40px auto;
+    margin: 34px auto;
     background-color: #fff;
     border-radius: 10px;
     box-sizing: border-box;
@@ -189,8 +186,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 80%;
-    height: 560px;
+    width: 82%;
+    height: 550px;
     /* height: 75%; */
     overflow: hidden;
     box-shadow: 5px 5px 15px rgb(159, 198, 255);
@@ -244,10 +241,10 @@
 /* 豪门4 */
 .haomeng4 {
     position: relative;
-    height: 770px;
+    height: 690px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
-    margin: 40px auto;
+    margin: 34px auto;
     background-color: #fff;
     border-radius: 10px;
     box-sizing: border-box;
@@ -264,8 +261,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 80%;
-    height: 560px;
+    width: 82%;
+    height: 550px;
     /* height: 75%; */
     overflow: hidden;
     box-shadow: 5px 5px 15px rgb(159, 198, 255);
@@ -319,10 +316,10 @@
 /* 豪门5 */
 .haomeng5 {
     position: relative;
-    height: 770px;
+    height: 690px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
-    margin: 40px auto;
+    margin: 34px auto;
     background-color: #fff;
     border-radius: 10px;
     box-sizing: border-box;
@@ -339,8 +336,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 80%;
-    height: 560px;
+    width: 82%;
+    height: 550px;
     /* height: 75%; */
     overflow: hidden;
     box-shadow: 5px 5px 15px rgb(159, 198, 255);
@@ -394,10 +391,10 @@
 /* 豪门6 */
 .haomeng6 {
     position: relative;
-    height: 770px;
+    height: 690px;
     width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
-    margin: 40px auto;
+    margin: 34px auto;
     background-color: #fff;
     border-radius: 10px;
     box-sizing: border-box;
@@ -414,8 +411,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 80%;
-    height: 560px;
+    width: 82%;
+    height: 550px;
     /* height: 75%; */
     overflow: hidden;
     box-shadow: 5px 5px 15px rgb(159, 198, 255);
@@ -465,7 +462,11 @@
     line-height: 1.4;
     margin-bottom: 20px;
 }
-
+/* 图片hover时向上移动 */
+div[class^="waibu"] > img:hover{
+    transform: translateY(-3px);
+    /* border: 3px solid rgba(192, 194, 255, 0.753); */
+}
 /* 6个俱乐部图片放大前通用样式 */
 .yuanlai {
     position: absolute;

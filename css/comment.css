@@ -1,9 +1,6 @@
 /* 顶部横导航 */
 .yidong {
-    left: 900px;
-}
-.genzong a:nth-of-type(1):hover ~ .yidong {
-    left: 300px;
+    left: 600px;
 }
 
 /* 打字机 */
