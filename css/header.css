@@ -88,7 +88,7 @@ header > .genzongdh > a {
     /* background-color: rgba(155, 200, 240, 0.9); */
     background-color: #b9dfff;
     border-radius: 5px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .genzongdh a:nth-of-type(1):hover ~ .yidong {
     left: 0px;
