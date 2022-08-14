@@ -31,9 +31,10 @@ window.addEventListener("load", function () {
     const pauseSong = () => {
         songPlaying = false;
         audio.pause();
-        // playPause.classList.remove("active");
+        playPause.classList.remove("active");
         playPause.style.color = "#6f96c2";
         playPause.style.webkitAnimationPlayState = "paused";
+        // playPause.style.transform = "rotate(0deg)";
     };
 
     //play/pause song
