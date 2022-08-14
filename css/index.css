@@ -63,8 +63,8 @@ body,html {
 /* 了解欧冠 */
 .ouguanls {
     position: relative;
-    /* width: 1100px; */
-    width: 1100px;
+    /* width: 84%; */
+    width: 84%;
     height: 600px;
     margin: 50px auto;
     /* border: 1px solid #6a9ef1; */
@@ -198,11 +198,11 @@ body,html {
     box-shadow: 5px 5px 15px #82a8e2;
 }
 .rmshang > img {
-    width: 50%;
+    width: 46%;
     border-radius: 10px;
-    margin-top: 2%;
+    margin-top: 3%;
     float: right;
-    margin-right: 20px;
+    margin-right: 25px;
     transition: 0.3s;
 }
 .rmshang > img:hover {
@@ -225,7 +225,8 @@ body,html {
     line-height: 1.6;
     margin-left: 30px;
     padding-right: 30px;
-    width: 42%;
+    text-align: justify;
+    width: 45%;
 }
 
 .rmwai > .rmzuo {
@@ -234,7 +235,7 @@ body,html {
     bottom: 0;
     left: 0;
     width: 50%;
-    height: 440px;
+    height: 450px;
     border-radius: 0 0 0 10px;
     box-shadow: 5px 5px 15px #82a8e2;
 }
@@ -243,7 +244,7 @@ body,html {
     height: 310px;
     border-radius: 10px;
     margin-left: 6%;
-    margin-top: 4%;
+    margin-top: 5.5%;
     margin-bottom: 1%;
     transition: 0.3s;
 }
@@ -269,7 +270,7 @@ body,html {
     bottom: 0;
     right: 0;
     width: 50%;
-    height: 440px;
+    height: 450px;
     border-radius: 0 0 10px 0;
     box-shadow: 5px 5px 15px #82a8e2;
 }
@@ -278,8 +279,8 @@ body,html {
     height: 310px;
     border-radius: 10px;
     margin-bottom: 1%;
-    margin-left: 4%;
-    margin-top: 4%;
+    margin-left: 3%;
+    margin-top: 5.5%;
     transition: 0.3s;
 }
 .rmyou > .bfk:hover {
@@ -290,13 +291,13 @@ body,html {
     font-size: large;
     font-weight: 600;
     color: #fff;
-    margin-left: 4%;
+    margin-left: 3.4%;
 }
 .rmyou > .bfk2 {
     font-size: 1.1rem;
     color: #fff;
     width: 90%;
-    margin: 2% 4%;
+    margin: 2% 3.4%;
 }
 
 /* 欧冠数据 */
@@ -306,7 +307,7 @@ body,html {
 .ouguansj {
     position: relative;
     height: 640px;
-    width: 1100px;
+    width: 84%;
     box-shadow: 5px 5px 15px #82a8e2;
     margin: 50px auto;
     background-color: #fff;
@@ -454,7 +455,7 @@ body,html {
 .zanzhu {
     position: relative;
     height: 400px;
-    width: 1100px;
+    width: 84%;
     margin: 40px auto;
     border-radius: 10px;
     box-shadow: 5px 5px 20px 0px#82a8e2;
