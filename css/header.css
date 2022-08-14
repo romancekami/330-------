@@ -76,6 +76,9 @@ header > .genzongdh > a {
     color: #22355f;
     /* background-color: rgba(235, 245, 178, 0.794); */
 }
+header > .genzongdh > a:active ~ .yidong {
+    background-color: #9bceff;
+}
 .yidong {
     /* display: flex; */
     position: absolute;
@@ -85,8 +88,10 @@ header > .genzongdh > a {
     bottom: 0;
     width: 120px;
     height: 60px;
-    /* background-color: rgba(155, 200, 240, 0.9); */
-    background-color: #b9dfff;
+    /* background-color: #b9dfff; */
+    /* background-color: #8ec6fb; */
+    /* background-color: #9bceff; */
+    background-color: #20559f43;
     border-radius: 5px;
     transition: 0.3s;
 }

@@ -55,9 +55,9 @@ body {
     margin: 80px auto;
     transform-style: preserve-3d;
     /* background-color: #3c71e0; */
-    animation: xuanzhuan 14s linear infinite;
+    animation: xuanzhuan1 14s linear infinite;
 }
-@keyframes xuanzhuan {
+@keyframes xuanzhuan1 {
     0% {
         transform: rotateY(0);
     }
